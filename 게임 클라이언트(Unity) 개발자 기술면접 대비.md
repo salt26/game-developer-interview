@@ -684,6 +684,7 @@
   * Unity에서는 [`Newtonsoft.JSON`](https://www.newtonsoft.com/json)과 [`UnityEngine.JsonUtility`](https://docs.unity3d.com/kr/2021.2/Manual/JSONSerialization.html)를 사용할 수 있다.
     * *면접에서 이것까지 묻지는 않겠지만, 나중에 둘의 차이를 알아두면 좋습니다.*
 * `BinaryFormatter`는 [보안 취약점(code injection)이 발견되었으므로](https://discussions.unity.com/t/should-i-avoid-using-binaryformatter-altogether/245535/3) 사용하지 않아야 한다.
+* *효과적인 직렬화를 위한 각종 서드 파티 라이브러리들이 있으니 찾아보면 좋습니다.*
 
 ### C# `string`
 
