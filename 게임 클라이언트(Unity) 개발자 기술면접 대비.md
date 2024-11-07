@@ -1,10 +1,15 @@
 # 게임 클라이언트(Unity) 개발자 기술면접 대비
 
-> 작성자: [안단태](https://github.com/salt26/)
+> 안단태 [(GitHub 링크)](https://github.com/salt26/)
+
+작성: 2024년 7월  
+편집: 2024년 11월
 
 <img src="./by-nc.svg" height=40>
 
 ## 목차
+
+### 1부: 준비하는 팁
 
 * [큰 그림](#큰-그림)
   * [일반적인 입사 절차](#일반적인-입사-절차)
@@ -16,15 +21,18 @@
   * [회사와의 Fit](#회사와의-Fit)
   * [신규 입사자로서 느끼는 점](#신규-입사자로서-느끼는-점)
 
-* [기술면접 대비 목차](#기술면접-대비-목차)
-  * [시작하기 전에](#시작하기-전에)
-  * [Unity & C# 스크립팅](#unity--c-스크립팅)
-  * [Unity 그래픽스](#unity-그래픽스)
-  * [객체지향 프로그래밍](#객체지향-프로그래밍)
-  * [디자인 패턴](#디자인-패턴)
-  * [운영체제](#운영체제)
-  * [데이터베이스](#데이터베이스)
-  * [통신](#통신)
+* [기술면접 대비 예상 질문](#기술면접-대비-예상-질문)
+
+### 2부: 공부 자료
+
+* [시작하기 전에](#시작하기-전에)
+* [Unity & C# 스크립팅](#unity--c-스크립팅)
+* [Unity 그래픽스](#unity-그래픽스)
+* [객체지향 프로그래밍](#객체지향-프로그래밍)
+* [디자인 패턴](#디자인-패턴)
+* [운영체제](#운영체제)
+* [데이터베이스](#데이터베이스)
+* [통신](#통신)
 
 ---
 
@@ -59,7 +67,7 @@
 ### 과제 또는 구현 테스트
 
 > 알고리즘 문제를 푸는 코딩 테스트와는 다릅니다.  
-> 회사에 따라 다르지만, Unity를 사용해 짧은 시간 동안 처음부터 게임을 개발할 것을 요구하는 전형에 대한 감상입니다.
+> 회사에 따라 다르지만, Unity를 사용해 짧은 시간(2시간 ~ 1주일) 동안 처음부터 게임을 개발할 것을 요구하는 전형에 대한 감상입니다.
 
 * **내공이 없으면 통과할 수 없다.**
   * 문제 분석 및 이해, 코드 구조 설계, Unity C# 스크립팅, 알고리즘, 사용자 입력 처리, 시각화(애니메이션) 등을 종합적으로 요구한다.
@@ -78,24 +86,25 @@
   * 인터넷 검색이 가능하더라도 검색할 시간이 아깝다. 손에 익은 구현 기술만으로 자급자족할 수 있어야 한다.
 
 * **짧은 시간 안에 게임 하나를 바닥부터 개발해서 혼자 완성하는 연습을 많이 해봐야 한다.**
-  
+
 ### 기술면접
 
 * 기술면접은 지원자의 내공을 측정하는 면접이 아니다.
   * 단기적인 단순 암기로 넘길 수 있는 면접이다.
   * 즉, 지원자가 우리 회사에 들어오기 위해서 **'최근에' 공부를 하는 열의를 보였는가**를 평가하는 자리이다.
   * 학교에서 가르쳐 준 적 없는 내용이 대부분이므로, "개발 많이 해 봤는데 나 정도면 충분히 붙겠지~" 하고 아무 준비 없이 가면 아무 대답도 하지 못할 것이다.
-    * 뒤에 나올 내용들을 공부하고 가면 된다.
+    * [뒤에 나올 내용들](#시작하기-전에)을 공부하고 가면 된다.
 
 * 기술면접에서도 인성면접에서 할 법한 질문이 많이 나온다.
   * 자신이 쓴 서류의 내용에 대해 완벽히 이해하고 설명할 수 있어야 한다.
   * **회사의 인재상에 대해 숙지하고 가야 한다.**
   * 평소에 "왜?"에 대한 질문을 많이 던져봐야 한다.
-    * *다른 개발 직군 많은데 왜 게임 업계로 왔는지?*
-    * *왜 기획자 말고 클라이언트 프로그래머로 지원했는지?*
-    * *왜 우리 회사여야 하는지?*
-    * *팀원과 갈등을 겪었던 경험?*
-    * *기획자가 정말 말도 안 되는 것을 꼭 구현해야 한다고 주장하고 이를 굽히지 않을 때, 프로그래머로서 어떻게 대처할 것인가?*
+    * *"다른 개발 직군 많은데 왜 게임 업계로 왔는지?"*
+    * *"왜 기획자 말고 클라이언트 프로그래머로 지원했는지?"*
+    * *"왜 우리 회사여야 하는지?"*
+    * *"회사에서 가장 배우고 싶은 것이 무엇인지?"*
+    * *"팀원과 갈등을 겪었던 경험?"*
+    * *"기획자가 정말 말도 안 되는 것을 꼭 구현해야 한다고 주장하고 이를 굽히지 않을 때, 프로그래머로서 어떻게 대처할 것인가?"*
 
 * 편하게 진행한다고 하지만 지원자에게 암묵적인 압박을 많이 넣는다.
   * 지원자 스스로 굉장히 자랑스럽게 여기고 잘 했다고 생각하는 것에 대해 *"이런 부분이 아쉬운데 더 잘 할 수는 없었을까요?"* 라고 묻는다.
@@ -104,6 +113,7 @@
   * 모든 것은 **직무 적합성**으로 통한다.
     * 내가 이 직무에 있어서 뛰어난 사람이라는 것을 마음껏 자랑하자.
     * 회사에서는 지원자가 새로운 것을 학습하는 속도를 현재 가진 기술·지식 수준보다 더 중요하게 본다.
+    * 소통과 협업 능력도 매우 중요하게 본다.
   * 내가 하고 싶은 이야기보다 면접관이 듣고 싶어하는 이야기를 하는 것이 좋다.
     * 예: 피아노를 화려하게 정말 잘 치는데 지휘자를 보지 않는 반주자는 팀에서 원하는 반주자가 아닐 것이다.
     * 예: "전 나중에 창업을 하고 싶습니다!"라고 말한다면 면접관은 *'금방 나갈 사람이구나'* 하고 생각한다.
@@ -113,6 +123,7 @@
     * 이것이 지원자를 뽑아야 할 이유가 되지는 않는다.
   * 거짓말은 하면 안 된다.
     * 예: 활동적인 일을 좋아하지 않는데 "활동적인 일은 저에게 맡겨 주십시오!"라고 말하고 면접을 통과했다면 회사 가서도 원하지 않는 활동적인 일만 계속 맡게 될 것이다.
+    * 면접에서 거짓말을 하는 사람은 언제든 거짓말을 할 수 있는 사람이라는 인식이 생긴다.
 
 * '나 같은 인재를 안 뽑으면 회사가 손해'라는 마음가짐으로 면접에 임하면 두려울 것이 없다.
   * 자신감 있는 모습을 보여줄 수 있고, 떨어져도 상처를 덜 받는다.
@@ -137,9 +148,46 @@
 * 회사 상황에 따라 지원자마다 다른 질문을 던지기도 한다.
   * 지원자를 걸러야 하는 상황이면 일부러 직무와 관련이 적은 세세한 내용을 질문하기도 한다.
     * 예: 한 채용 공고에서 필요한 인원을 모두 선발했는데 아직 전형을 진행하고 있는 지원자가 있을 경우
-    * 이 경우 저렇게 질문을 받고 떨어지면 지원자가 실력이 없는 것이 아닌데도 공부를 덜 해서 떨어진 것이라고 스스로 믿게 될 수 있다.
+    * 이 경우 저렇게 어려운 질문을 받고 떨어지면 지원자가 실력이 없는 것이 아닌데도 공부를 덜 해서 떨어진 것이라고 스스로 믿게 될 수 있다.
     * 보통은 지원하는 타이밍이 안 좋았던 것이다. 좌절할 필요 없다.
   * 지원자를 뽑고 싶은 상황이면 어느 면접에서나 나오는 질문들을 물어보는 편이다.
+
+* *퀴즈: 모르는 질문이 나왔을 때에는 어떻게 대답할 것인가?*
+  <details>
+  <summary>가. 아는 것처럼 최대한 둘러대며 그럴듯한 답을 이야기한다. <i>(클릭하면 펼쳐집니다.)</i></summary>
+
+  많은 지원자들이 최선을 다하는 태도를 보여주고자 이렇게 대답한다.  
+  그러나 면접관 입장에서는 가장 뽑고 싶지 않은 사람일 수 있다.  
+  같이 일하는 동료가 이런 사람이라면 검증되지 않은 잘못된 정보가 사실인 것처럼 전파될 수 있다.  
+  의도는 좋았을지 몰라도 거짓말을 하고 있는 것이다.  
+  또한 이런 습관은 자신의 부족함을 인정하지 않는 태도로 비칠 수 있으며, 선입견에 갇혀 있기 쉬워 자신의 성장에도 방해가 된다.
+
+  </details>
+
+  <details>
+  <summary>나. 질문과 관련된, 알고 있는 다른 내용들을 설명하면서 질문에 대한 답은 모르겠다고 말한다. <i>(클릭하면 펼쳐집니다.)</i></summary>
+
+  최선을 다해 면접에 임하는 태도를 보여주는 동시에 거짓말은 하지 않는 답변이다.  
+  이러한 모습은 면접관에 따라 호불호가 갈릴 수 있다.  
+  요점만 간단히 전달하는 능력을 중요하게 보는 면접관에게는 다소 장황하고 초점을 잃은 답변이 불리하게 작용할 수 있다.  
+  그러나 꼼꼼하게 오류 없이 전달하는 능력을 중요시하는 면접관에게는 좋게 보일 수도 있다.  
+  자신이 가진 지식의 깊이를 구체적으로 드러내어 평가가 수월해지기도 한다.
+
+  </details>
+
+  <details>
+  <summary>다. 깔끔하게 잘 모르겠다고 말한다. <i>(클릭하면 펼쳐집니다.)</i></summary>
+
+  지원자가 이런 대답을 하기는 쉽지 않다.  
+  실력이 부족하고 최선을 다하지 않는 사람처럼 보일 것에 대한 두려움 때문이다.  
+  그러나 면접관에게는 꽤 호감을 주는 대답일 수 있다.  
+  자신이 무엇을 모르는지 분명히 알고 있고, 정직하게 검증된 내용만을 전달하려 한다는 인상을 주기 때문이다.
+
+  물론 너무 많은 질문에 대해 모른다고 답하면 실력 부족으로 떨어질 수 있다.  
+  그러나 반대로, 지원자가 모든 질문에 완벽히 답할 수 있다면 그런 회사는 가면 안 된다.  
+  그 회사에서 일하는 동안 자신이 성장할 수 없기 때문이다.
+
+  </details>
 
 ### 회사와의 Fit
 
@@ -181,13 +229,13 @@
 * 맡은 직무를 통해 추구하고자 하는 가치가 자신이 가진 가치관과 일치하는지가 굉장히 중요하다.
   * 어느 회사를 다니는지보다 어느 직무를 맡았는지가 더 중요하다.
     * 회사에 지원할 때에는 바닥부터 게임을 제작하며 라이브로 고객을 상대하는 경험을 해보고 싶었으나,
-      게임 콘텐츠와 관계 없는 개발자 도구를 만드는 직무를 맡게 된 것에 대해 아쉬움이 있었다.  
+      게임 콘텐츠와 관계 없는 개발자 도구를 만드는 직무를 맡게 될 것에 대해 아쉬움이 있었다.  
     * 그러나 입사 후 일주일 만에, 이 부서에 오기를 잘했다는 생각이 들었다.
     * 게임 제작 부서에 들어갔다면 성장할 여유도 없이 익숙한 기술에 더 숙달되기 위한 훈련만을 반복했을 것 같다.
     * 반면 현재 속한 부서에서는 여유 있게 새로운 기술을 도입해 볼 수 있고, 개인의 성장을 도모할 수 있으며,
       회사가 안고 있는 개발 과정 상의 여러 문제점을 해결하여 유의미한 기여를 할 수 있다.
   * 회색 직장인이 되지 않고 '살아 있는 나'로 남아 있기 위해 고민을 하게 된다.
-    * 나는 '코더'가 아닌 '프로그래머'이다.
+    * 나는 '코더'가 아니라 '프로그래머'이자 '아키텍처'다.
     * 할 일이 명시적으로 주어지지 않아도, 추구하고자 하는 가치를 고려하여 스스로 문제를 정의하고 할 일을 찾아서 해야 비로소 '프로그래머'가 된다.
   * **내가 가장 열정을 쏟고 싶은 일이 회사에서 맡은 일과 같아질 수 있을지 고민해보게 된다.**
     * 이것이 가능하다면 최적의 회사, 최적의 직무를 찾은 것이다.
@@ -196,74 +244,78 @@
   * 먼 훗날에 다른 회사를 가더라도 유용하게 쓰이는 기술이라고 생각하면 **공부하는 것이 즐거워서 동료에게 질문을 끊임없이 하게 된다.**
   * 기술은 회사에 쌓이는 것이 아니다. 개인에게 남는 것이다.
 * 신입이 해야 할 역할이 분명히 있다.
-  * 어떤 회사도 완벽한 조직일 수 없다. 누구나 사내 문제점을 알지만, 이를 해결할 의지를 가져볼 수 있는 사람은 신입밖에 없다.
+  * 어떤 회사도 완벽한 조직일 수 없다. 누구나 사내의 문제점을 알지만, 이를 해결할 의지를 가지고 추진할 수 있는 사람은 신입밖에 없다.
   * 동료들이 경력이 많고 기술적으로 뛰어나다고 해도, 신입이 그들보다 잘 할 수 있는 영역이 분명 존재한다.
-    * 예: 개발 문서 작성
 
-## 기술면접 대비 목차
+## 기술면접 대비 예상 질문
 
 > **볼드체**는 나올 확률이 높은 질문입니다.  
 > Unreal을 사용하는 직무의 경우 C++과 Unreal에 대한 이해가 필요합니다. 이는 여기서 다루지 않습니다.
 
 * Unity & C# 스크립팅
-  * Unity에서 `Update()`와 `FixedUpdate()`와 `LateUpdate()`의 차이에 대해 설명해 보세요.
-  * 값 형식과 참조 형식이 메모리에 어떻게 저장되는지 설명해 보세요.
-  * C#에서 boxing과 unboxing이 무엇인가요?
-  * Unity에서 serialization이 무엇인가요? 어떻게 serialize하나요?
-  * C#에서 `const`와 `readonly`의 차이를 설명해 보세요.
-  * C#에서 `struct`와 `class` 인스턴스가 어떻게 다른가요?
-  * C#에서 `string`을 `+`로 연결할 때 생기는 문제점에 대해 설명해 보세요.
-  * **C#과 Unity의 garbage collector가 서로 다른데, 어떤 차이가 있는지 설명해 보세요.**
-  * C#의 `delegate`와 `event`는 언제 사용하나요?
-  * **Unity의 fake null에 대해 설명해 주세요.**
-  * C#에서 정적 함수의 인자에 `this`를 넣으면 어떻게 되는지 설명해 보세요.
-  * C#의 `List`와 `Dictionary`는 내부적으로 어떻게 구현되어 있나요?
-  * C#의 얕은 복사와 깊은 복사를 할 때 각각 메모리에서 어떤 일이 일어나는지 설명해 보세요.
-  * C#의 LINQ에 대해 설명해 보세요.
-  * C#의 Reflection에 대해 설명해 보세요.
-  * Unity 프로파일러를 사용해 본 경험에 대해 이야기해 주세요.
-  * **Unity에서 최적화를 해본 경험에 대해 이야기해 주세요.**
+  * "Unity 2022에서 지원하는 C# 버전이 무엇인가요?"
+  * "Unity에서 `Update()`와 `FixedUpdate()`와 `LateUpdate()`의 차이에 대해 설명해 보세요."
+  * "값 형식과 참조 형식이 메모리에 어떻게 저장되는지 설명해 보세요."
+  * "C#에서 얕은 복사와 깊은 복사를 할 때 각각 메모리에서 어떤 일이 일어나는지 설명해 보세요."
+  * **"C#과 Unity의 garbage collector가 서로 다른데, 어떤 차이가 있는지 설명해 보세요."**
+  * "C#에서 `const`와 `readonly`의 차이를 설명해 보세요."
+  * "C#에서 `struct`와 `class` 인스턴스가 어떻게 다른가요?"
+  * "C#에서 boxing이 일어나는 상황을 설명해 보세요."
+  * "직렬화된 형식으로서 JSON이 갖는 장점과 단점이 무엇인가요?"
+  * "C#에서 `string`을 `+`로 연결할 때 생기는 문제점에 대해 설명해 보세요."
+  * "C#에서 확장 메서드를 만드는 방법을 설명해 보세요."
+  * "C#의 `delegate`와 `event`는 언제 사용하나요?"
+  * "C#에서 클로저를 피해야 하는 이유는 무엇일까요?"
+  * **"Unity의 fake null에 대해 설명해 주세요."**
+  * "C#의 `List`와 `Dictionary`는 내부적으로 어떻게 구현되어 있나요?"
+  * "C#의 LINQ에 대해 설명해 보세요."
+  * "C#의 Reflection에 대해 설명해 보세요."
+  * "Unity 프로파일러를 사용해 본 경험에 대해 이야기해 주세요."
+  * **"Unity로 개발하면서 언제 최적화를 해야 한다고 생각하나요?"**
+  * "최근에 나온 Unity 6의 최신 기능 중 하나를 설명해 보세요."
 
 * Unity 그래픽스
-  * Unity에서 씬의 오브젝트를 디바이스 화면에 렌더링하기까지 거치는 과정을 설명해 보세요.
-  * 배치 렌더링의 장점과 배치 렌더링을 활용하는 방법을 설명해 보세요.
-  * **드로우 콜을 최적화하려면 어떻게 해야 하나요?**
-  * **스프라이트 아틀라스를 사용해 본 경험에 대해 이야기해 주세요.**
-  * Unity에서 보통 어떤 텍스처를 사용하시나요?
-  * 2D 렌더링와 3D 렌더링의 차이에 대해 설명해 보세요.
+  * "Unity에서 씬의 오브젝트를 디바이스 화면에 렌더링하기까지 거치는 과정을 설명해 보세요."
+  * "배치 렌더링의 장점과 배치 렌더링을 활용하는 방법을 설명해 보세요."
+  * **"드로우 콜을 최적화하려면 어떻게 해야 하나요?"**
+  * **"스프라이트 아틀라스를 사용해 본 경험에 대해 이야기해 주세요."**
+  * "Unity에서 보통 어떤 텍스처 포맷을 사용하시나요?"
+  * "2D 렌더링와 3D 렌더링의 차이에 대해 설명해 보세요."
 
 * 객체지향 프로그래밍
-  * 객체지향 프로그래밍의 네 가지 속성에 대해 설명해 보세요.
-  * 객체지향 프로그래밍의 5원칙에 대해 설명해 보세요.
-  * C#에서 다형성을 어떻게 활용하는지 설명해 보세요.
-  * C#에서 자식 클래스가 virtual로 선언된 부모 클래스의 메서드를 override할 때, 이것이 메모리에서 어떻게 관리되는지 설명해 보세요.
+  * "객체지향 프로그래밍의 네 가지 속성에 대해 설명해 보세요."
+  * "객체지향 프로그래밍의 5원칙에 대해 설명해 보세요."
+  * "C#에서 다형성을 어떻게 활용하는지 설명해 보세요."
+  * "C#에서 자식 클래스가 virtual로 선언된 부모 클래스의 메서드를 override할 때, 이것이 메모리에서 어떻게 관리되는지 설명해 보세요."
 
 * 디자인 패턴
-  * **디자인 패턴을 적용해 본 경험에 대해 이야기해 주세요.**
-  * Singleton 패턴에 대해 설명해 보세요.
-  * Null object 패턴에 대해 설명해 보세요.
-  * Strategy 패턴에 대해 설명해 보세요.
-  * Proxy 패턴에 대해 설명해 보세요.
-  * Facade 패턴에 대해 설명해 보세요.
-  * State 패턴에 대해 설명해 보세요.
-  * Adapter 패턴에 대해 설명해 보세요.
-  * Observer 패턴에 대해 설명해 보세요.
+  * **"디자인 패턴을 적용해 본 경험에 대해 이야기해 주세요."**
+  * "Singleton 패턴에 대해 설명해 보세요."
+  * "Null object 패턴에 대해 설명해 보세요."
+  * "Strategy 패턴에 대해 설명해 보세요."
+  * "Proxy 패턴에 대해 설명해 보세요."
+  * "Facade 패턴에 대해 설명해 보세요."
+  * "State 패턴에 대해 설명해 보세요."
+  * "Adapter 패턴에 대해 설명해 보세요."
+  * "Observer 패턴에 대해 설명해 보세요."
 
 * 운영체제
-  * 리틀 엔디언과 빅 엔디언의 차이를 설명해 보세요.
-  * 프로세스와 스레드의 차이를 설명해 보세요.
-  * 메모리 단편화의 종류와 해결 방법에 대해 설명해 보세요.
-  * Page fault에 대해 설명해 보세요.
-  * Mutex와 semaphore에 대해 설명해 보세요.
-  * 데드락이 일어나는 조건에 대해 설명해 보세요.
-  * CPU 스케줄러 알고리즘을 아는 대로 설명해 보세요.
+  * "리틀 엔디언과 빅 엔디언의 차이를 설명해 보세요."
+  * "프로세스와 스레드의 차이를 설명해 보세요."
+  * **"메모리 단편화의 종류와 해결 방법에 대해 설명해 보세요."**
+  * "Page fault에 대해 설명해 보세요."
+  * "Mutex와 semaphore에 대해 설명해 보세요."
+  * **"데드락이 일어나는 조건에 대해 설명해 보세요."**
+  * "CPU 스케줄러 알고리즘을 아는 대로 설명해 보세요."
+  * "32비트와 64비트의 차이가 무엇인가요?"
 
 * 데이터베이스
-  * Primary key가 가져야 하는 특성을 설명해 보세요.
-  * 데이터베이스 정규화에 대해 설명해 보세요.
+  * "Primary key가 가져야 하는 특성을 설명해 보세요."
+  * "데이터베이스 정규화에 대해 설명해 보세요."
 
 * 통신
-  * RPC가 언제 사용되는지 설명해 보세요.
+  * "멀티플레이어 게임에서 전용 서버 방식과 호스팅 방식의 차이를 설명해 보세요."
+  * "RPC가 언제 사용되는지 설명해 보세요."
 
 ---
 
@@ -271,31 +323,47 @@
 
 * https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview
   * 본 자료 내용의 대부분은 위 링크에서 가져왔습니다.
-  * 여기에는 없는, C++ 및 Unreal에 대한 내용도 위 링크에 있습니다.
+  * 위 링크에는 여기에는 없는, C++ 및 Unreal에 대한 내용도 있습니다.
+  * 본 자료 내용 중 위 링크에 없는 내용도 있습니다.
 * 나올 가능성이 높은 질문들은 **중요!** 표시를 달아두었습니다.
-* **본 자료 내용에는 오류가 있을 수 있습니다.**
-  * 모든 내용을 그대로 외우기보다는, 다른 자료도 찾아보고 내용을 검증하면서 공부하시면 학습에 도움이 될 것입니다.
+
+> [!WARNING]
+> **본 자료 내용에는 오류가 있을 수 있습니다.**  
+> 모든 내용을 그대로 외우기보다는, 다른 자료도 찾아보고 내용을 검증하면서 공부하시면 학습에 도움이 될 것입니다.
 
 ## Unity & C# 스크립팅
+
+### Unity에서 사용하는 C# 버전
+
+> https://docs.unity3d.com/kr/2023.2/Manual/CSharpCompiler.html  
+> https://docs.unity3d.com/kr/2022.3/Manual/CSharpCompiler.html  
+> https://docs.unity3d.com/kr/2021.3/Manual/CSharpCompiler.html  
+> https://docs.unity3d.com/kr/2020.3/Manual/CSharpCompiler.html
+
+* 2020.x까지는 C# 8.0 사용
+* 2021.x부터 2023.x까지는 C# 9.0 사용
+  * 일부 기능 미지원
 
 ### Unity Lifecycle
 
 > https://docs.unity3d.com/kr/current/Manual/ExecutionOrder.html
 
-* Awake -> OnEnable -> Start -> FixedUpdate -> Update -> LateUpdate -> OnApplicationPause
+* Awake -> OnEnable -> Start -> **FixedUpdate -> Update -> LateUpdate** -> OnApplicationPause
 * Awake
   * Enable 여부와 상관없이 호출된다.
   * 항상 가장 먼저 호출된다. 인스턴스 생성 또는 스크립트 로드 시 한 번 불린다.
   * Awake끼리는 호출 순서가 무작위이다.
-  * 참조를 형성할 때 쓰인다.
+  * <details>
+    <summary>참조를 형성할 때 쓰인다. <i>(클릭하면 예제 코드가 보입니다.)</i></summary>
 
-```C#
-public static GameManager instance;
-void Awake()
-{
-    instance = this;
-}
-```
+    ```C#
+    public static GameManager instance;
+    void Awake()
+    {
+        instance = this;
+    }
+    ```
+    </details>
 
 * OnEnable
   * Start보다 일찍 불린다.
@@ -304,10 +372,11 @@ void Awake()
 * Start
   * 해당 스크립트 컴포넌트가 Enable되어야 불린다.
   * 한 번 불린다.
-* Update와 LateUpdate는 호출 횟수가 같고 프레임마다 한 번씩 호출되며, 프레임 드랍의 영향을 받아 호출을 건너뛰는 경우가 있다. LateUpdate는 Update보다 나중에 불린다.
-  * Update에서는 주로 사용자 입력 처리를 한다.
 * FixedUpdate는 Update보다 일찍 불리며, 프레임 드랍이 생기더라도 물리 엔진의 고정된 주기에 따라 호출하지 못한 만큼 추가로 함수를 호출하여, 호출 횟수가 경과한 시간에 비례함을 보장한다.
   * FixedUpdate에서는 주로 물리 연산 처리를 한다.
+  * Update에서는 주로 사용자 입력 처리를 한다.
+* Update와 LateUpdate는 호출 횟수가 같고 프레임마다 한 번씩 호출되며, 프레임 드랍의 영향을 받아 호출을 건너뛰는 경우가 있다.  
+  * LateUpdate는 Update보다 나중에 불린다.
 
 ### Stack / Heap Memory
 
@@ -317,6 +386,7 @@ void Awake()
   * 쌓일수록 아래로(낮은 주소 쪽으로) 내려온다.
   * 컴파일러가 관리하며, 실행할 수 없다.
   * 값 타입을 저장한다.
+  * 변수의 사용 범위를 벗어나면 금방 pop되어 수명이 짧은 편이다.
 * Stack보다 아래에 Heap이 있다.
   * 쌓일수록 위로(높은 주소 쪽으로) 올라간다.
   * 프로그래머가 관리하며, 실행할 수 없다.
@@ -327,39 +397,151 @@ void Awake()
 * 그 아래에 Literals가 있다. 이는 읽기 전용이며 실행할 수 없다.
 * 그 아래에 Instructions가 있다. 이는 읽기 전용이며 실행할 수 있다.
 
-### C# Boxing & Unboxing
+### C#에서의 얕은 복사 vs. 깊은 복사
 
-* 값 타입
-  * C#의 구조체와 열거(enum) 타입이 여기에 속한다.
-  * `System.ValueType`으로부터 상속된다.
-  * 스레드 스택에 할당된다.
-* 참조 타입
-  * C#의 클래스가 여기에 속한다.
-  * `System.Object`로부터 상속된다.
-  * 힙에 할당되며 GC(garbage collector)가 관리한다.
-    * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
-* Boxing: 값 타입을 참조 타입으로 변환
-* Unboxing: 참조 타입을 값 타입으로 변환
-* Boxing과 Unboxing은 비싸다.
-  * 힙에 garbage를 많이 남기고, GC가 일하게 된다.
+* 얕은 복사: 같은 힙 메모리 주소를 가리키도록 주소를 복사
+* 깊은 복사: 힙에 복사할 객체가 가진 메모리만큼을 새로 할당하여 복사하고 새 메모리 주소를 반환
+* C++과는 조금 다르다.
+  * C++에서의 얕은 복사: 멤버의 값만 복사
+  * C++에서의 깊은 복사: 멤버의 값 복사 + 포인터가 참조하는 대상까지 복사
 
-### Unity Serialization / Deserialization
+### C#과 Unity의 Garbage Collector
 
-* 직렬화
-  * (동적 할당을 통해 저장된) 객체를 바이트 단위로 변환하여 데이터화하는 것
-  * 직렬화를 하면 디스크에 저장하거나 네트워크를 통해 전송하기 용이하며 프로그램의 실행이 멈추어도 데이터를 보존할 수 있다.
-* 역직렬화
-* Unity에서 어떤 클래스를 직렬화하려면 어떻게 해야 하는가?
-  * 추상 클래스나 일반 클래스가 아니어야 하고
-  * 클래스 앞에 `[Serializable]` 데코레이터를 붙이고
-  * 해당 클래스의 모든 필드가 직렬화 가능해야 하는데
-  * `int`, `bool`, `string` 등의 primitive 타입은 모두 직렬화 가능하고
-  * 열거형(enum)으로 정의된 타입도 직렬화 가능하고
-  * `Vector3`, `Color` 등의 일부 Unity 내장 타입도 직렬화 가능하고
-  * 구조체는 구조체 앞에 `[Serializable]` 데코레이터를 붙이면 직렬화 가능하다.
-  * 추가로 `UnityEngine.Object`에서 파생된 오브젝트를 가리키는 레퍼런스도 직렬화 가능하다.
-  * 다만 `static`, `const`, `readonly`는 직렬화되지 않으며
-  * `private` 필드도 `[SerializeField]`가 붙어있지 않다면 직렬화되지 않는다.
+> **중요!**
+
+* *.NET과 Unity의 GC가 어떻게 다른지 설명할 수 있는가?*
+* *`GC.Collect()` 함수를 명시적으로 호출해본 적이 있는가?*
+
+#### GC를 쓸 때의 장점
+
+* 사용자가 메모리를 관리할 필요가 없다. 편하다.
+* 메모리 누수가 일어나지 않는다.
+* 관리되는 힙에 효율적으로 저장한다. 메모리 압축을 한다. 메모리 단편화를 줄인다.
+* 한 객체가 다른 객체가 가진 메모리에 접근하는 일을 막아 메모리 안전성을 높인다.
+
+#### .NET의 GC
+
+> https://learn.microsoft.com/ko-kr/dotnet/standard/garbage-collection/fundamentals
+
+* **세대 구분이 있다.**
+  * 0세대, 1세대, 2세대
+  * 새로 생긴 객체들은 0세대에 넣는다.
+  * 0세대에서 가장 자주 GC가 돌아간다.
+  * GC로부터 한 번 살아남은 객체들은 세대가 1씩 오른다.
+  * 0세대에서 돌려서 메모리를 확보할 수 없는 경우 1세대도 돌린다. 마찬가지로 1세대에서도 메모리를 확보할 수 없는 경우 2세대까지 돌린다. 즉, 2세대에서 GC가 돌아갔다면 1세대와 0세대에서도 GC가 돌아간 것이다.
+  * 3세대도 있다. 대형 개체를 저장하는 힙이다. 여기서는 주소 이동이 거의 일어나지 않는다. 복사하면 오래 걸리기 때문이다. 이 3세대는 논리적으로는 2세대로 취급한다.
+* 관리되는 힙 영역이 있다.
+* Mark and Sweep 알고리즘으로 GC를 돌린다.
+  * `static` 변수, 스레드 스택의 지역 변수, CPU 레지스터 등을 root로 잡는다.
+  * 여기서부터 참조 가능한 모든 변수들을 탐색하면서 mark한다.
+  * mark 페이즈가 끝나면 관리되는 힙 영역에 할당된 모든 참조 타입 변수를 탐색하면서 mark되지 않은 것들을 sweep한다.
+  * sweep할 때 힙 압축을 수행한다. 만약 garbage가 있으면 그 위(그보다 높은 주소)에 저장된, mark된 메모리를 garbage가 있던 공간에 옮길 준비를 한다. 변경될 주소 포인터를 계산하고, 메모리를 복사하여 옮기는 작업을 수행한다.
+  * 두 객체가 서로를 상호 참조하고 있어도, root로부터 시작하는 외부 개체와 연결되어 있지 않다면 Mark and Sweep 알고리즘에서 mark되지 않으므로 상호 참조가 문제가 되지 않는다.
+* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다.
+
+#### Unity의 GC
+
+* [Boehm–Demers–Weiser garbage collector 알고리즘](https://www.hboehm.info/gc/gcdescr.html)을 사용한다.
+  * Mark and Sweep의 변형이다.
+* **.NET의 GC와 무엇이 다른가?**
+  * 세대 구분이 없다.
+  * 메모리 압축이 없다.
+  * 별도의 GC 스레드 없이, 메모리 할당 스레드에서 돌아간다.
+  * *아무튼 별로 안 좋다.*
+* 왜 다른가?
+  * 싱글 스레드 환경에서 사용하기 위해
+* 유의할 점
+  * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
+
+#### 동적 할당을 줄여야 하는 이유
+
+> https://docs.unity3d.com/kr/current/Manual/performance-managed-memory.html
+
+* 공간적 이유
+  * 동적 할당은 메모리(힙) 공간을 잡아먹는다.
+    * 계속 쌓이면 out of memory 오류가 발생하여 크래시가 발생할 수 있다.
+    * 특히 모바일 앱에서 메모리 최적화를 하지 않으면 10분만 켜 두어도 메모리를 1GB 이상 차지하다가 결국 운영체제에 의해 강제종료되는 경우가 생긴다.
+  * 잦은 할당과 해제는 [메모리 단편화](#memory-fragmentation)를 일으킨다.
+    * 힙에 빈 공간이 있음에도 이들이 분산되어 있어 새 할당을 한번에 넣을 공간이 없다면 힙을 2배씩 확장해야 한다.
+* 시간적 이유
+  * GC가 돌아가는 동안 많은 연산을 한다.
+    * 언제 GC가 돌아갈지 모른다. Unity도 모르고 프로그래머도 모른다.
+    * 다른 중요한 연산을 수행해야 할 때 마침 GC가 돌아가고 있으면 CPU 병목이 생겨 느려질 수 있다.
+    * GC가 돌아가는 중에는 다른 모든 스레드가 일시 중단된다.
+  * 힙을 압축하는 연산은 시간이 오래 걸린다.
+    * 메모리 복사 및 붙여넣기를 하기 때문이다.
+  * 메모리에 로드할 때에도 시간이 걸린다.
+  
+#### Unity에서 할당을 줄이는 습관
+
+> https://docs.unity3d.com/kr/current/Manual/performance-garbage-collection-best-practices.html
+
+* 임시 할당
+  * 매 프레임마다 새로 힙에 할당하는 동적 메모리가 있다면 이를 줄여야 한다.
+  * `new`는 메모리 최적화 시 최우선 제거 대상이다.
+  * `Update()`에서 `new`를 한 번 사용하여 100 바이트씩 임시 할당을 해도 60 FPS 기준 초당 6KB의 할당이 이루어진다. 3분이면 1MB의 할당이 이루어진다.
+* 반복되는 문자열 연결
+  * [`+`로 문자열을 연결할 때의 문제점은 설명 참고](#문자열-할당을-줄이는-방법)
+  * 특히 매 프레임마다 UI의 Text를 `+`로 연결해 업데이트하는 일을 피하기 위해 다음의 방법을 사용할 수 있다.
+    * 매 프레임 조건을 확인하여 해당 조건이 만족될 때에만 텍스트를 업데이트한다.
+    * 고정된 부분과 변하는 부분을 서로 다른 UI Text 오브젝트로 둔다.
+* 재사용 가능 오브젝트 풀 (object pool 패턴)
+  * 게임오브젝트를 `Destroy()`하지 않고 `SetActive()`하여 재사용한다.
+* 컬렉션과 배열 재사용
+  * `List`나 `Dictionary`를 `Clear()`하여 재사용한다.
+* 배열 값 반환 메서드
+  * 매번 새로 배열을 만들어 반환하지 말고 기존 배열을 인자로 받아 수정하도록 한다.
+* 빈 배열 및 문자열 재사용 (null object 패턴)
+  * 배열 값 기반의 메서드가 빈 세트를 반환해야 할 때 `null` 값 대신 빈 배열로 미리 할당된 정적 인스턴스를 반환하면 더 효율적이다.
+  * [빈 문자열의 경우 설명 참고](#빈-문자열-확인)
+* LINQ 사용 줄이기
+  * [대부분의 LINQ 메서드는 `for` 문으로 대체하여 할당을 줄일 수 있다.](#c-linq)
+* 클로저 및 익명 메서드
+  * [자세한 내용은 설명 참고](#lambda-anonymous-method--closure)
+* 박싱
+  * C#에서는 세대 기반 GC 덕분에 큰 문제가 없지만 Unity에서는 문제가 될 수 있다.
+  * [자세한 예제는 boxing & unboxing 설명 참고](#c-boxing--unboxing)
+* 배열 기반 Unity API
+  * 반복문에서는 배열을 반환하는 프로퍼티에 자주 접근하지 않는 것이 좋다.
+
+  * <details>
+    <summary>예: <code>Input.touches</code> <i>(클릭하면 예제 코드가 보입니다.)</i></summary>
+
+    ```C#
+    // Bad C# script example: Input.touches returns an array every time it’s accessed
+    for ( int i = 0; i < Input.touches.Length; i++ )
+    {
+      Touch touch = Input.touches[i];
+
+        // …
+    }
+    ```
+
+    ```C#
+    // Better C# script example: Input.touches is only accessed once here
+    Touch[] touches = Input.touches;
+
+    for ( int i = 0; i < touches.Length; i++ )
+    {
+
+      Touch touch = touches[i];
+
+      // …
+    }
+    ```
+
+    ```C#
+    // BEST C# script example: Input.touchCount and Input.GetTouch don’t allocate at all.
+    int touchCount = Input.touchCount;  // access outside the loop
+
+    for ( int i = 0; i < touchCount; i++ )
+    {
+      Touch touch = Input.GetTouch(i);
+
+      // …
+    }
+    ```
+    </details>
 
 ### C# `const`와 `readonly`의 차이
 
@@ -392,6 +574,89 @@ void Awake()
   * **힙에 저장된다.**
   * 필드와 메서드를 가질 수 있다.
 
+### C# Boxing & Unboxing
+
+> https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+* 값 타입
+  * C#의 primitives(`int`, `float` 등), 구조체(`struct`), 열거(`enum`) 타입이 여기에 속한다.
+  * `System.ValueType`으로부터 상속된다.
+  * 스레드 스택에 할당된다.
+* 참조 타입
+  * C#의 클래스(`class`), 문자열(`string`) 타입이 여기에 속한다.
+  * `System.Object` 또는 `System.String`으로부터 상속된다.
+  * 힙에 할당되며 GC(garbage collector)가 관리한다.
+    * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
+* Boxing: 값 타입을 참조 타입으로 변환
+* Unboxing: 참조 타입을 값 타입으로 변환
+* Boxing과 unboxing은 동적 할당을 만드므로 비싸다.
+* **대표적인 boxing의 예** (피해야 한다.)
+  * `object.Equals(object other)` 사용
+
+  ```csharp
+  int x = 1;
+  object y = new object();
+  y.Equals(x);  // 값 타입인 x를 참조 타입인 Object 타입으로 boxing하므로 인자 전달 시 할당 발생
+  ```
+
+  * `struct`를 부모 인터페이스 클래스로 캐스팅
+    * `struct`가 값 타입이므로 boxing이 일어난다.
+    * https://medium.com/@swiftroll3d/avoiding-mistakes-when-using-structs-in-c-b1c23043fce0
+  
+  ```csharp
+  SomeStructWithInheritance struct1 = new();
+  IDisposable structDisposable = struct1;  // boxing
+
+  List<IDisposable> disposables = new();
+  disposables.Add(struct1);   // boxing
+
+  public struct SomeStructWithInheritance : IDisposable
+  {
+      public int x;
+
+      public void Dispose()
+      {
+          //some code
+      }
+  }
+  ```
+
+### Unity Serialization / Deserialization
+
+* 직렬화
+  * (동적 할당을 통해 저장된) 객체를 바이트 단위로 변환하여 데이터화하는 것
+  * 직렬화를 하면 디스크에 저장하거나 네트워크를 통해 전송하기 용이하며 프로그램의 실행이 멈추어도 데이터를 보존할 수 있다.
+* 역직렬화
+* Unity에서 어떤 클래스를 직렬화하려면 어떻게 해야 하는가?
+  * 추상 클래스나 일반 클래스가 아니어야 하고
+  * 클래스 앞에 `[Serializable]` 데코레이터를 붙이고
+  * 해당 클래스의 모든 필드가 직렬화 가능해야 하는데
+  * `int`, `bool`, `string` 등의 primitive 타입은 모두 직렬화 가능하고
+  * 열거형(`enum`)으로 정의된 타입도 직렬화 가능하고
+  * `Vector3`, `Color` 등의 일부 Unity 내장 타입도 직렬화 가능하고
+  * 구조체는 구조체 앞에 `[Serializable]` 데코레이터를 붙이면 직렬화 가능하다.
+  * 추가로 `UnityEngine.Object`에서 파생된 오브젝트를 가리키는 참조도 직렬화 가능하다.
+  * 다만 `static`, `const`, `readonly`는 직렬화되지 않으며
+  * `private` 필드도 `[SerializeField]`가 붙어있지 않다면 직렬화되지 않는다.
+* JSON(JavaScript Object Notation)
+  * 데이터를 직렬화한 대표적인 형식이다.
+  * 장점
+    * 가독성이 높다.
+    * 다른 언어와 쉽게 호환된다.
+    * 동적 타입을 사용하는 언어(JavaScript 등)에서 유리하다.
+  * 단점
+    * 용량이 크다.
+    * 직렬화 및 역직렬화 시간이 오래 걸린다.
+  * Unity에서는 [`Newtonsoft.JSON`](https://www.newtonsoft.com/json)과 [`UnityEngine.JsonUtility`](https://docs.unity3d.com/kr/2021.2/Manual/JSONSerialization.html)를 사용할 수 있다.
+    * *나중에 둘의 차이를 알아두면 좋습니다.*
+* `BinaryFormatter`는 [보안 취약점(code injection)이 발견되었으므로](https://discussions.unity.com/t/should-i-avoid-using-binaryformatter-altogether/245535/3) 사용하지 않아야 한다.
+* 고려해 볼 수 있는 서드 파티 바이너리 직렬화 라이브러리
+  * Google의 [Protocol Buffers (Protobuf)](https://protobuf.dev/)
+  * Google의 [FlatBuffers](https://flatbuffers.dev/)
+  * Cysharp의 [MemoryPack](https://github.com/Cysharp/MemoryPack)
+  * [MessagePack](https://msgpack.org/)
+  * [Cap'n Proto](https://capnproto.org/)
+
 ### C# `string`
 
 * Immutable이다.
@@ -399,9 +664,8 @@ void Awake()
   * 안 쓰는 문자열 값은 GC가 처리한다.
 * 왜 이렇게 구현되어 있는가?
   * 멀티스레딩 환경에서 동기화를 모두 신경쓰는 것보다 readonly로 하는 것이 편하기 때문이다.
-* 유의할 점이 있는가?
-  * string을 자주 바꾸면 GC가 많이 일하게 된다.
-  * **이럴 때에는 `StringBuilder`를 사용하는 것이 낫다.**
+* string을 자주 바꾸면 할당이 많이 일어난다.
+  * 이럴 때에는 `StringBuilder`이나 Cysharp의 [`ZString`](https://github.com/Cysharp/ZString)을 사용하는 것이 낫다.
 * `StringBuilder`
   * 기본적으로 16글자를 담을 수 있는 버퍼를 잡는다.
   * 이 버퍼 안에서는 수정이 이루어져도 GC가 처리하지 않는다.
@@ -410,156 +674,156 @@ void Awake()
   * 문자열 앞에 `$`를 붙여주면 사용할 수 있다.
   * 예: `text = $"(x, y) = ({pos.x}, {pos.y})"`
 
-### C#과 Unity의 Garbage Collector
+#### 문자열 할당을 줄이는 방법
+* 빈 문자열은 `""` 대신 `string.Empty`를 사용한다.
+* `string.Split()`의 사용을 줄인다.
+* `+`로 문자열을 연결하지 않고 `StringBuilder` 또는 문자열 보간을 이용한다.
+  * 예: `string s = "a" + "b" + "c" + "d";`의 코드에서는 `"abcd"`를 만들기 위해 `"a"`, `"ab"`, `"abc"`라는 불필요한 중간 결과물들이 할당된다.
+  * `System.Text.StringBuilder`보다 할당을 줄인 서드 파티 라이브러리도 있다. (예: Cysharp의 [`ZString`](https://github.com/Cysharp/ZString))
 
-> **중요!**
+#### 빈 문자열 확인
+* 속도가 가장 빠른 방법은 `string.Length == 0`을 확인하는 것이다.
+  * 다만 이는 string이 `null`이 아님이 확실한 상황에서만 사용할 수 있다.
+  * 평소에 빈 문자열을 반환할 때 `null`이나 `""`보다는 `string.Empty`를 반환하는 것이 좋다.
+* `string.IsNullOrEmpty()`를 쓰면 안전하다.
 
-* *C#과 Unity의 GC가 어떻게 다른지 설명할 수 있는가?*
-* *`GC.Collect()` 함수를 명시적으로 호출해본 적이 있는가?*
+### `this`
 
-#### GC를 쓸 때의 장점
+* 클래스의 현재 인스턴스를 가리킨다.
+  * 지역 변수와 필드를 구분할 때 필드에 대해 `this.필드`를 사용하여 구분할 수 있다.
+* 생성자에서 `: this()`를 사용할 수 있다.
+  * 생성자를 여러 개 만드는 경우, 중복되는 코드를 `: this()`로 정리할 수 있다.
+  * `this(int a)`와 같이 인자도 입력할 수 있다. 그러면 그 생성자를 가리키게 된다.
+  * <details>
+    <summary>예제 코드 보기 <i>(클릭하면 펼쳐집니다.)</i></summary>
 
-* 사용자가 메모리를 관리할 필요가 없다. 편하다.
-* 메모리 누수가 일어나지 않는다.
-* 관리되는 힙에 효율적으로 저장한다. 메모리 압축을 한다.
-* 한 객체가 다른 객체가 가진 메모리에 접근하는 일을 막아 메모리 안전성을 높인다.
-* 상호 참조 해결법
-  * 두 객체가 서로를 상호 참조하고 있어도, root로부터 시작하는 외부 개체와 연결되어 있지 않다면 mark되지 않는다.
+    아래 코드를 그 아래의 코드로 바꿀 수 있다. 기능은 같다.
 
-#### .NET의 GC
+    ```C#
+    class MyClass
+    {
+        int a;
+        int b;
 
-> https://learn.microsoft.com/ko-kr/dotnet/standard/garbage-collection/fundamentals
+        public MyClass()
+        {
+            a = 10;
+        }
 
-* **세대 구분이 있다.**
-  * 0세대, 1세대, 2세대
-  * 새로 생긴 객체들은 0세대에 넣는다.
-  * 0세대에서 가장 자주 GC가 돌아간다.
-  * GC로부터 한 번 살아남은 객체들은 세대가 1씩 오른다.
-  * 0세대에서 돌려서 메모리를 확보할 수 없는 경우 1세대도 돌린다. 마찬가지로 1세대에서도 메모리를 확보할 수 없는 경우 2세대까지 돌린다. 즉, 2세대에서 GC가 돌아갔다면 1세대와 0세대에서도 GC가 돌아간 것이다.
-  * 3세대도 있다. 대형 개체를 저장하는 힙이다. 여기서는 주소 이동이 거의 일어나지 않는다. 복사하면 오래 걸리기 때문이다. 이 3세대는 논리적으로는 2세대로 취급한다.
-* 관리되는 힙 영역이 있다.
-* Mark and Sweep 알고리즘으로 GC를 돌린다.
-  * `static` 변수, 스레드 스택의 로컬 변수, CPU 레지스터 등을 root로 잡는다.
-  * 여기서부터 참조 가능한 모든 변수들을 탐색하면서 mark한다.
-  * mark 페이즈가 끝나면 관리되는 힙 영역에 할당된 모든 참조 타입 변수를 탐색하면서 mark되지 않은 것들을 sweep한다.
-  * sweep할 때 힙 압축을 수행한다. 만약 garbage가 있으면 그 위(그보다 높은 주소)에 저장된, mark된 메모리를 garbage가 있던 공간에 옮길 준비를 한다. 변경될 주소 포인터를 계산하고, 메모리를 복사하여 옮기는 작업을 수행한다.
-* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다.
+        public Myclass(int b)
+        {
+            a = 10;
+            this.b = b;
+        }
+    }
+    ```
 
-#### Unity의 GC
+    ```C#
+    class MyClass
+    {
+        int a;
+        int b;
 
-* [Boehm–Demers–Weiser garbage collector 알고리즘](https://www.hboehm.info/gc/gcdescr.html)을 사용한다.
-  * Mark and Sweep의 변형이다.
-* **.NET의 GC와 무엇이 다른가?**
-  * 세대 구분이 없다.
-  * 메모리 압축이 없다.
-  * 별도의 GC 스레드 없이, 메모리 할당 스레드에서 돌아간다.
-  * *아무튼 별로 안 좋다.*
-* 왜 다른가?
-  * 싱글 스레드 환경에서 사용하기 위해
-* 유의할 점
-  * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
-  
-#### Unity에서 Garbage 생성을 줄이는 법
+        public MyClass()
+        {
+            a = 10;
+        }
 
-> https://docs.unity3d.com/kr/current/Manual/performance-garbage-collection-best-practices.html
+        public Myclass(int b) : this()
+        {
+            this.b = b;
+        }
+    }
+    ```
 
-* 임시 할당
-  * 매 프레임마다 새로 힙에 할당하는 동적 메모리가 있다면 이를 줄여야 한다. (예: `Update()`)
-* 재사용 가능 오브젝트 풀 (object pool 패턴)
-  * 게임오브젝트를 `Destroy()`하지 않고 `SetActive()`하여 재사용한다.
-* 반복되는 문자열 연결
-  * 문자열을 `+=`으로 연결하지 않고 `System.Text.StringBuilder` 등을 사용한다.
-    * `System.Text.StringBuilder`보다 할당을 줄인 서드 파티 라이브러리도 있다. (예: CySharp의 `ZString`)
-  * 특히 매 프레임마다 UI의 Text를 `+`로 연결해 업데이트하는 일을 피하기 위해 다음의 방법을 사용할 수 있다.
-    * 매 프레임 조건을 확인하여 해당 조건이 만족될 때에만 텍스트를 업데이트한다.
-    * 고정된 부분과 변하는 부분을 서로 다른 UI Text 오브젝트로 둔다.
-* 문자열
-  * 빈 문자열은 `""` 대신 `String.Empty`를 사용한다.
-  * `String.Split()`의 사용을 줄인다.
-* 배열 값 반환 메서드
-  * 매번 새로 배열을 만들어 반환하지 말고 기존 배열을 인자로 받아 수정하도록 한다.
-* 컬렉션과 배열 재사용
-  * 리스트나 딕셔너리를 `Clear()`하여 재사용한다.
-* LINQ 사용 줄이기
-  * 대부분의 LINQ 메서드는 `for` 문으로 대체하여 할당을 줄일 수 있다.
-  * [자세한 내용은 LINQ 설명 참고](#c-linq)
-* 클로저 및 익명 메서드
-  * C#의 메서드 참조는 레퍼런스 타입이므로 힙에 할당된다. 즉, 익명 메서드이든 미리 정의된 메서드이든 메서드 참조를 인자로 전달하면 임시 할당(garbage)이 발생한다.
-  * 익명 메서드를 클로저로 전환하면 메모리 양이 상당히 증가한다.
-    * 클로저: 익명 메서드 밖에서 정의된 변수를 익명 메서드 안에서 사용하는 경우
-    * 클로저를 만들면 정확한 값을 전달하기 위해 외부 범위 변수를 유지할 수 있는 익명 클래스를 만들고 이것을 인스턴스화하여 힙에 할당한다.
-    * 가급적 클로저보다는 익명 메서드를 쓰는 것이 좋다.
-* 빈 배열 재사용 (null object 패턴)
-  * 배열 값 기반의 메서드가 빈 세트를 반환해야 할 때 `null` 값 대신 빈 배열로 미리 할당된 정적 인스턴스를 반환하면 더 효율적이다.
-* 박싱
-  * 값 타입을 `Equals(Object obj)`의 인자로 넘길 때 흔히 발생
-  * C#에서는 세대 기반 GC 덕분에 큰 문제가 없지만 Unity에서는 문제가 될 수 있다.
+    </details>
 
-```C#
-int x = 1;
-object y = new object();
-y.Equals(x);  // 값 타입인 x를 참조 타입인 Object 타입으로 boxing하여 전달 -> garbage 생성
-```
-
-* 배열 기반 Unity API
-  * 반복문에서는 배열을 반환하는 프로퍼티에 자주 접근하지 않는 것이 좋다.
-  * 예: `Input.touches`
-
-```C#
-// Bad C# script example: Input.touches returns an array every time it’s accessed
-for ( int i = 0; i < Input.touches.Length; i++ )
-{
-   Touch touch = Input.touches[i];
-
-    // …
-}
-```
-
-```C#
-// Better C# script example: Input.touches is only accessed once here
-Touch[] touches = Input.touches;
-
-for ( int i = 0; i < touches.Length; i++ )
-{
-
-   Touch touch = touches[i];
-
-   // …
-}
-```
-
-```C#
-// BEST C# script example: Input.touchCount and Input.GetTouch don’t allocate at all.
-int touchCount = Input.touchCount;  // access outside the loop
-
-for ( int i = 0; i < touchCount; i++ )
-{
-   Touch touch = Input.GetTouch(i);
-
-   // …
-}
-```
+* 정적 함수에서 인자에 `this`를 쓸 수 있다.
+  * 예: `public static void Shuffle<T>(this IList<T> list)`
+  * 이렇게 하면 확장 메서드를 만들 수 있다.
+  * 사용 예 (둘 다 된다.)
+    * `Shuffle(list);`
+    * `list.Shuffle();`
+  * 그러나 기존 클래스의 함수와 동일한 시그니처로 확장 메서드를 정의하면 호출되지 않는다. 컴파일 타임에 인스턴스 함수가 우선적으로 호출되고, 이것이 없으면 확장 메서드를 호출하기 때문이다.
 
 ### `delegate` & `event`
 
-* `delegate`는 함수 포인터이다.
+* `delegate`는 함수 대리자이다.
   * 함수를 타입처럼 취급하고 함수에 대한 참조를 갖는다.
   * 인자 수, 인자 타입, 반환 타입을 통해 정의된다.
     * 같은 함수 시그니처끼리는 모두 호환된다.
   * 호출할 함수 목록을 담을 수 있다.
   * 이것이 가리키는 함수들을 순서대로 모두 호출할 수 있다.
 * `event`는 선언한 클래스에서만 호출할 수 있는 `delegate`이다.
-  * 다른 클래스에서는 함수를 등록할 수만 있다.
+  * 다른 클래스에서는 함수를 등록하는 것만 가능하다.
 * `Action`: 인자 타입이 T이고 반환 타입이 void인 함수 대리자 템플릿
 * `Func<T, TResult>`: 인자 타입이 T이고 반환 타입이 TResult인 함수 대리자 템플릿
 * `Predicate`: 인자 타입이 T이고 반환 타입이 bool인 함수 대리자 템플릿
+
+> https://www.jacksondunstan.com/articles/3765
+
+* 아래와 같은 코드에서 불필요한 할당이 발생할 수 있다.
+
+  ```csharp
+  void TakeDelegate(Action del)
+  {
+  }
+  void MyFunction()
+  {
+  }
+  TakeDelegate(MyFunction);
+  ```
+  * <details>
+    <summary><i><b>퀴즈: 어디에서 할당이 일어났는지 맞혀보세요.</b> (클릭하면 펼쳐집니다.)</i></summary>
+
+    * 위 코드의 마지막 줄이 컴파일러에 의해 다음과 같이 변환된다.  
+    ```csharp
+    TakeDelegate(new Action(MyFunction));
+    ```
+    </details>
+
 * 호출할 함수가 `null`인 문제
   * 대리자의 함수 목록이 비어있음을 확인하지 않고 호출하면 `NullReferenceException`이 발생한다.
   * `if`문으로 `null` 체크를 하는 것은 좋지 않다.
     * 멀티스레딩 환경에서 `null` 체크 통과 후 다른 스레드에서 등록 취소를 하면 대리자가 `null`인 경우가 생길 수 있다.
   * `?.`(null conditional operator)를 사용하는 것이 스레드로부터 안전하다.
     * 이 연산자는 atomic하기 때문에 멀티스레딩 환경에서도 `null` 체크와 호출을 동시에 해준다.
-    * 문제가 있다면, Unity에서는 `?.`을 잘 쓰기 어렵다.
+    * 문제가 있다면, Unity에서는 `?.`을 잘 쓰기 어렵다. [자세한 내용은 C#과 Unity의 `null` 참고.](#c과-unity의-null)
+
+### Lambda, Anonymous Method & Closure
+
+* 람다 식
+  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/lambda-expressions
+
+  ```csharp
+  Action printLine = () => Console.WriteLine();
+  Func<int, int> square = (x) => x * x;
+  ```
+
+* 익명 메서드 (무명 메서드)
+
+  ```csharp
+  Action printLine = delegate() { Console.WriteLine(); };
+  Func<int, int> square = delegate(x) { return x * x; };
+  ```
+
+* 클로저
+  * 익명 메서드 밖에서 정의된 변수를 익명 메서드 안에서 사용하는 경우
+  * https://medium.com/swlh/the-magic-of-c-closures-9c6e3fff6ff9
+  * https://medium.com/@mark.pelf/closures-in-c-demystified-ba989651080d
+
+  ```csharp
+  int i = 0;
+  Action print = () => Console.WriteLine(i);  // 람다 식 바깥의 지역 변수 i 포착
+  Func<int> increment = () => ++i;            // 람다 식 바깥의 지역 변수 i 포착
+  ```
+
+* C#의 메서드 참조는 참조 형식이므로 힙에 할당된다.
+  * 즉, 익명 메서드이든 미리 정의된 메서드이든 메서드 참조를 인자로 전달하면 임시 할당이 발생한다.
+* 익명 메서드를 클로저로 전환하면 메모리 양이 상당히 증가한다.
+  * 클로저를 만들면 정확한 값을 전달하기 위해 외부 범위 변수를 유지할 수 있는 익명 클래스를 만들고 이것을 인스턴스화하여 힙에 할당한다.
+  * 가급적 클로저보다는 익명 메서드를 쓰는 것이 좋다.
+* `static` 키워드를 붙여 [정적 익명 함수](https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions)를 만들면 지역 변수를 실수로 포착하여 클로저가 되는 현상을 방지할 수 있다.
 
 ### C#과 Unity의 `null`
 
@@ -570,8 +834,8 @@ for ( int i = 0; i < touchCount; i++ )
 
 * Unity에서는 null 검사를 위해 `==`과 `!=`을 커스텀으로 구현했다.
   * Unity 엔진의 백엔드는 C++로 짜여 있고, Unity C#의 문법들은 이 C++ 엔진과 소통하기 위한 개발자 API이다.
-  * C#의 `System.Object`가 null이 아니더라도(Unity 객체의 메타데이터 잔존) Unity에서 `Destroy()`한 `UnityEngine.Object`에 대해서는 `obj == null`이 `true`가 나온다.
-    * Unity 내부의 C++에서의 객체가 `null`이면 C#의 `UnityEngine.Object`도 `null`이지만, GC가 돌기 전까지는 C#의 `System.Object`가 `null`이 아니다.
+  * C#의 `System.Object`가 null이 아니더라도(Unity 객체의 메타데이터가 잔존하는 상태) Unity에서 `Destroy()`한 `UnityEngine.Object`에 대해서는(C++에서는 없어진 객체) `obj == null`이 `true`가 나온다.
+    * Unity 내부의 C++에서의 객체가 `null`이면 C#의 `UnityEngine.Object`도 `null`이지만, C#의 GC가 돌기 전까지는 C#의 `System.Object`가 `null`이 아니다.
     * 이를 **Fake null**이라고 한다.
   * 그러나 **`?.`(null conditional operator)의 경우 `UnityEngine.Object`가 아니라 `System.Object`의 null 여부를 검사하기 때문에 `UnityEngine.Object`에 대해서는 사용할 수 없다.**
     * `?.`는 오버라이드할 수 없다.
@@ -583,12 +847,14 @@ for ( int i = 0; i < touchCount; i++ )
     2. `System.Object.ReferenceEquals()`로 비교하는 방법
     3. 패턴 매칭 `is null`을 이용하는 방법
 * **`== null` vs. `is null`**
-  * `== null`은 타입 별로 오버라이드된 `==` 연산자를 호출하여 계산한다. 따라서 `UnityEngine.Object`을 비교할 때에는 느리다.
-  * `is null`은 바로 `ceq` 인스트럭션 연산을 적용하기 때문에 빠르다. 다만 `==`이 오버라이드된 경우 `is null`을 사용하면 의도하지 않은 동작이 나타날 수 있다.
+  * `== null`은 타입 별로 오버라이드된 `==` 연산자를 호출하여 계산한다.
+    * 따라서 `UnityEngine.Object`을 비교할 때에는 느리다.
+    * `== null`은 예외적인 상황을 내부에서 체크하므로 **가장 안전하다.**
+  * `is null`은 바로 `ceq` 인스트럭션 연산을 적용하기 때문에 빠르다.
+    * 다만 `UnityEngine.Object`처럼 `==`이 오버라이드된 경우 `is null`을 사용하면 의도하지 않은 동작이 나타날 수 있다.
 * 속도 비교
   * `is null`과 `ReferenceEquals(null)`은 속도가 비슷하게 가장 빠르다.
   * (가장 빠름) `is null` < `Equals(a, null)` < `a.Equals(null)` < `a == null` (가장 느림)
-* `== null`은 예외적인 상황을 내부에서 체크하므로 가장 안전하다.
 
 > https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-
 
@@ -613,65 +879,11 @@ for ( int i = 0; i < touchCount; i++ )
   * `==`이 오버라이드된 경우에 `??=`을 사용하면 의도하지 않은 동작이 나타날 수 있다.
   * `??=`는 오버라이드할 수 없다.
 
-### this
-
-* 클래스의 현재 인스턴스를 가리킨다.
-  * 로컬 변수와 필드를 구분할 때 필드에 대해 `this.필드`를 사용하여 구분할 수 있다.
-* 생성자에서 `: this()`를 사용할 수 있다.
-  * 생성자를 여러 개 만드는 경우, 중복되는 코드를 `: this()`로 정리할 수 있다.
-  * `this(int a)`와 같이 인자도 입력할 수 있다. 그러면 그 생성자를 가리키게 된다.
-  * 예: 아래 코드를 그 아래의 코드로 바꿀 수 있다. 기능은 같다.
-
-```C#
-class MyClass
-{
-    int a;
-    int b;
-
-    public MyClass()
-    {
-        a = 10;
-    }
-
-    public Myclass(int b)
-    {
-        a = 10;
-        this.b = b;
-    }
-}
-```
-
-```C#
-class MyClass
-{
-    int a;
-    int b;
-
-    public MyClass()
-    {
-        a = 10;
-    }
-
-    public Myclass(int b) : this()
-    {
-        this.b = b;
-    }
-}
-```
-
-* 정적 함수에서 인자에 `this`를 쓸 수 있다.
-  * 예: `public static void Shuffle<T>(this IList<T> list)`
-  * 이렇게 하면 확장 메서드를 만들 수 있다.
-  * 사용 예 (둘 다 된다.)
-    * `Shuffle(list);`
-    * `list.Shuffle();`
-  * 그러나 기존 클래스의 함수와 동일한 시그니처로 확장 메서드를 정의하면 호출되지 않는다. 컴파일 타임에 인스턴스 함수가 우선적으로 호출되고, 이것이 없으면 확장 메서드를 호출하기 때문이다.
-
 ### List & Dictionary
 
 * `List<>`: 배열(ArrayList)
-  * 용량(capacity)을 초과하여 삽입하는 경우 용량을 늘린 새 배열을 할당하고 기존 배열의 값을 복사한다. 따라서 시간 복잡도가 O(n)이다. 이를 피하려면 미리 사용할 만큼의 용량을 할당할 필요가 있다.
-  * `TrimExcess()`를 쓰거나 `Capacity`를 직접 변경하여 낭비되는 공간을 줄이는 경우에도 새 배열을 할당한다. 따라서 시간 복잡도가 O(n)이다.
+  * 용량(capacity)을 초과하여 삽입하는 경우 용량을 늘린 새 배열을 할당하고 기존 배열의 값을 복사한다. 따라서 시간 복잡도가 $O(n)$이다. 이를 피하려면 미리 사용할 만큼의 용량을 할당할 필요가 있다.
+  * `TrimExcess()`를 쓰거나 `Capacity`를 직접 변경하여 낭비되는 공간을 줄이는 경우에도 새 배열을 할당한다. 따라서 시간 복잡도가 $O(n)$이다.
   * `Remove()`는 배열의 용량을 변경하지 않는다.
 * `Dictionary< , >`: 해시 테이블
 * `HashSet<>`: 해시 테이블
@@ -682,10 +894,10 @@ class MyClass
 > https://stackoverflow.com/questions/3070644/ordered-list-of-keyvaluepairs
 
 * `SortedList<TKey, TValue>`와 `SortedDictionary<TKey, TValue>`의 차이
-  * 둘 다 검색은 O(log n)
+  * 둘 다 검색은 $O(\log{n})$
   * 삽입, 삭제에서 차이가 있다.
-    * `SortedList< , >`는 삽입, 삭제가 O(n)
-    * `SortedDictionary< , >`는 삽입, 삭제가 O(log n)
+    * `SortedList< , >`는 삽입, 삭제가 $O(n)$
+    * `SortedDictionary< , >`는 삽입, 삭제가 $O(\log{n})$
   * 메모리는 `SortedList< , >`가 더 적게 차지한다.
   * 정렬된 데이터로부터 자료구조가 생성된 경우에는 `SortedList< , >`가 더 빠르다.
   * `Keys`나 `Values` list를 반환해야 할 때 `SortedList`는 이 list를 그냥 반환하면 되고, `SortedDictionary`는 list를 생성해서 반환해야 한다.
@@ -699,20 +911,13 @@ class MyClass
   * 보통은 `Dictionary`를 쓰는 것이 낫다.
 
 * Hash Table
-  * 운이 좋으면 O(1)만에 삽입, 삭제, 검색이 가능하다.
-  * 운이 나쁘면(해시 함수가 계속 충돌하면) 최악의 경우 O(n)이 걸린다.
+  * 운이 좋으면 $O(1)$만에 삽입, 삭제, 검색이 가능하다.
+  * 운이 나쁘면(해시 함수가 계속 충돌하면) 최악의 경우 $O(n)$이 걸린다.
   * 충돌 시 linear probing(+1, +2, +3, ...), quadratic probing(+1, +4, +9, ...), double hashing(두 개의 해시 함수 사용)을 통해 내부를 채워 나간다.
 
 * Red-black Tree
   * self-balancing binary search tree
-  * 삽입, 삭제, 검색 모두 O(log n)이다.
-
-### C#에서의 얕은 복사 vs. 깊은 복사
-* 얕은 복사: 같은 힙 메모리 주소를 가리키도록 주소를 복사
-* 깊은 복사: 힙에 복사할 객체가 가진 메모리만큼을 새로 할당하여 복사하고 새 메모리 주소를 반환
-* C++과는 조금 다르다.
-  * C++에서의 얕은 복사: 멤버의 값만 복사
-  * C++에서의 깊은 복사: 멤버의 값 복사 + 포인터가 참조하는 대상까지 복사
+  * 삽입, 삭제, 검색 모두 $O(\log{n})$이다.
 
 ### C# LINQ
 > https://learn.microsoft.com/ko-kr/dotnet/csharp/linq/
@@ -720,56 +925,72 @@ class MyClass
 * Language-Integrated Query
 * [링크]라고 읽는다.
 
-```C#
-string sentence = "the quick brown fox jumps over the lazy dog";
-// Split the string into individual words to create a collection.
-string[] words = sentence.Split(' ');
+* <details>
+  <summary>LINQ 예제 코드 <i>(클릭하면 펼쳐집니다.)</i></summary>
 
-// Using query expression syntax.
-var query = from word in words
-            group word.ToUpper() by word.Length into gr
-            orderby gr.Key
-            select new { Length = gr.Key, Words = gr };
+  ```C#
+  string sentence = "the quick brown fox jumps over the lazy dog";
+  // Split the string into individual words to create a collection.
+  string[] words = sentence.Split(' ');
 
-// Using method-based query syntax.
-var query2 = words.
-    GroupBy(w => w.Length, w => w.ToUpper()).
-    Select(g => new { Length = g.Key, Words = g }).
-    OrderBy(o => o.Length);
+  // Using query expression syntax.
+  var query = from word in words
+              group word.ToUpper() by word.Length into gr
+              orderby gr.Key
+              select new { Length = gr.Key, Words = gr };
 
-foreach (var obj in query)
-{
-    Console.WriteLine("Words of length {0}:", obj.Length);
-    foreach (string word in obj.Words)
-        Console.WriteLine(word);
-}
+  // Using method-based query syntax.
+  var query2 = words.
+      GroupBy(w => w.Length, w => w.ToUpper()).
+      Select(g => new { Length = g.Key, Words = g }).
+      OrderBy(o => o.Length);
 
-// This code example produces the following output:
-//
-// Words of length 3:
-// THE
-// FOX
-// THE
-// DOG
-// Words of length 4:
-// OVER
-// LAZY
-// Words of length 5:
-// QUICK
-// BROWN
-// JUMPS
-```
+  foreach (var obj in query)
+  {
+      Console.WriteLine("Words of length {0}:", obj.Length);
+      foreach (string word in obj.Words)
+          Console.WriteLine(word);
+  }
 
+  // This code example produces the following output:
+  //
+  // Words of length 3:
+  // THE
+  // FOX
+  // THE
+  // DOG
+  // Words of length 4:
+  // OVER
+  // LAZY
+  // Words of length 5:
+  // QUICK
+  // BROWN
+  // JUMPS
+  ```
+  </details>
+
+> https://learn.microsoft.com/ko-kr/dotnet/csharp/tutorials/working-with-linq
+> https://medium.com/@qjfrntop12/linq-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-bc2c60dfca4f
+
+* 장점
+  * 코드를 짧게 하여 가독성을 높인다.
+  * 확장 메서드를 만들 수 있다.
+  * [지연 계산(lazy evaluation)](https://learn.microsoft.com/ko-kr/dotnet/standard/linq/deferred-execution-lazy-evaluation)을 수행한다.
+    * 결과 값을 사용하거나 `ToList()`, `ToArray()` 따위를 호출하면 그제서야 연산을 수행한다.
+    * 중간 결과물을 캐싱하려면 `ToList()`, `ToArray()` 따위를 호출해야 한다.
+    * 지연 계산은 임시 할당을 비교적 적게 만드므로 대형 컬렉션을 다룰 때 성능이 좋다.
+    * 때로는 즉시 계산이 지연 계산보다 유용할 때도 있고, 지연 계산의 특징 때문에 의도한 대로 작동하지 않을 수 있다.
 * 성능 상 단점
   * **불필요한 할당을 많이 만든다.**
   * 예를 들어, 아래와 같은 코드에서는 `w.ToUpper()`, `GroupBy()`, `Select()` 등의 메서드 호출마다, 최종 결과물에서 쓰이지 않는 중간 결과물이 발생한다.
-  * `ToArray()`, `ToList()` 등도 메모리 성능에 안 좋은 영향을 준다.
+  * `ToArray()`, `ToList()` 등도 메모리 및 시간 성능에 안 좋은 영향을 준다.
+  * [클로저](#lambda-anonymous-method--closure)를 만들기도 쉽다.
   * `for` 문(권장) 또는 `foreach` 문으로 변환하여 메모리를 최적화할 수 있다.
 
 ```C#
 var query2 = words.
-    GroupBy(w => w.Length, w => w.ToUpper()).
-    Select(g => new { Length = g.Key, Words = g }).
+    GroupBy(w => w.Length, w => w.ToUpper()). // w.ToUpper(), GroupBy() 할당 발생
+    Select(g => new { Length = g.Key, Words = g }). // Select() 할당 발생
     OrderBy(o => o.Length);
 ```
 
@@ -783,6 +1004,8 @@ var query2 = words.
   * 동적으로 타입 인스턴스를 만들거나, 타입을 기존 개체에 바인딩하거나, 기존 개체에서 타입을 가져올 수 있다.
   * 해당 타입의 메서드를 호출하거나 필드 및 프로퍼티에 접근할 수 있다.
 * 탐색하는 시간이 굉장히 느리기 때문에 **가급적 사용을 피해야 한다.**
+* 메서드 이름을 인자로 넣어 해당 메서드를 호출하는 함수는 내부적으로 Reflection을 사용하므로 피해야 한다.
+  * 예: `StartCoroutine("FadeOut");` 대신 `StartCoroutine(FadeOut());`을 사용해야 한다.
 
 ### Unity 프로파일러
 
@@ -806,12 +1029,31 @@ var query2 = words.
 
 > **중요!**  
 
-* *과거에 진행했던 프로젝트에서 최적화를 해본 경험을 말씀해 주세요.*
+* *"과거에 진행했던 프로젝트에서 최적화를 해본 경험을 말씀해 주세요."*
+* *"개발 중 언제 최적화를 진행하시나요?"*
+
+* *제 생각에, 최적화를 개발 초기 단계부터 생각할 필요는 없습니다.*
+  * *일단 돌아가는 코드를 짜고, 기능을 만든 후에, 프로그램을 돌려보면서 병목이 생기면 그때 최적화를 고려해도 늦지 않습니다.*
+  * *무엇이 병목일지 모르는 상황에서 미리 대처해 봤자, 다른 곳에서 병목이 생기면 이전의 대처는 별 의미가 없게 됩니다.*
+  * *어떤 코드가 주어질 때 이것이 어떤 성능 문제를 일으킬 수 있는지 포착할 수 있고, 이를 어떻게 고쳐야 하는지 알고 있다면 충분합니다.*
 
 * **아래 세 문서를 모두 읽어보시기를 강력히 추천합니다!**
   * https://docs.unity3d.com/kr/2021.3/Manual/BestPracticeUnderstandingPerformanceInUnity.html
   * https://docs.unity3d.com/kr/current/Manual/performance-garbage-collection-best-practices.html
   * https://learn.unity.com/tutorial/fixing-performance-problems-2019-3?uv=2022.2&courseId=5c87de35edbc2a091bdae346#
+
+* 깊게 공부하고 싶다면 아래 문서들도 읽어보세요.
+  * [Rider ReSharper가 잡아내는 비싼 연산의 종류](https://github.com/JetBrains/resharper-unity/wiki/Performance-critical-context-and-costly-methods)
+  * [Unity `GetComponent()` 및 태그 비교의 성능 테스트](https://snowhydra.wordpress.com/2015/06/01/unity-performance-testing-getcomponent-fields-tags/)
+  * [`delegate` 사용 시 할당을 줄이는 법](https://www.jacksondunstan.com/articles/3765)
+  * [`struct` 사용 시 할당을 줄이는 법](https://medium.com/@swiftroll3d/avoiding-mistakes-when-using-structs-in-c-b1c23043fce0)
+
+### Unity 6
+
+> https://unity.com/blog/unity-6-features-announcement
+> https://unity.com/kr/blog/engine-platform/unity-6-preview-release
+
+* *Unity 6가 이 글을 편집하는 중에 출시되었고, 최신 동향을 묻는 질문으로 Unity 6에서 소개된 새 기능을 묻는 질문이 나올 수도 있습니다.*
 
 ## Unity 그래픽스
 
@@ -890,13 +1132,34 @@ var query2 = words.
 
 > https://docs.unity3d.com/kr/2021.3/Manual/Textures.html
 
+* *"텍스처 압축 포맷은 어떤 것을 사용하시나요?"*
+
 * 3D 오브젝트의 메시 표면에 걸쳐 적용되는 비트맵 이미지
 * 텍스처는 매터리얼을 사용해 오브젝트에 적용할 수 있고, 매터리얼은 셰이더를 사용해 메시 표면의 텍스처를 렌더링한다.
-* 텍스처는 2의 제곱수 크기(POT)로 만들어야 한다.
+* 텍스처는 2의 제곱수 크기(POT: power of two)로 만들어야 한다.
   * 예: 32x32, 64x64, 128x128, 256x256
   * 정사각형이 아니어도 된다.
-  * 2의 제곱수 크기가 아니면(NPOT) 모바일 기기 또는 텍스처 압축 방식에 따라 POT로 변환한 후 로드하므로 성능이 저하된다.
+* 2의 제곱수 크기가 아니면(NPOT) 다음의 문제가 생긴다.
+  * 모바일 기기 또는 텍스처 압축 방식에 따라 POT로 변환한 후, NPOT 원본과 변환된 POT를 둘 다 로드한다.
+  * 변환 시간과 로드 시간이 오래 걸리고 메모리도 많이 잡아먹는다.
+* **텍스처 압축 포맷**
+  * 대표적인 압축 포맷으로 DTX5, ASTC, ETC2 등이 있다.
+  * 플랫폼 및 기기에 따라 사용해야 하는 텍스처 압축 포맷이 다르다.
+    * 기기에서 지원하는 포맷을 사용하면 별도의 변환 없이 바로 GPU에서 처리할 수 있다.
+    * 기기에서 지원하지 않는 포맷을 사용하면, 비압축 포맷으로 변환한 다음, 압축된 원본과 비압축 포맷을 둘 다 로드한 상태에서 비압축 포맷을 처리한다.  
+      경우에 따라서는 앱 시작 시 30초 이상 검은 화면에서 머물러 있는 경우도 발생할 수 있다.
+    * 같은 플랫폼이라도 구형 기기에서는 지원하는 포맷이 다를 수 있다.
+  * Unity에서는 플랫폼마다 다른 기본 텍스처 포맷을 제공한다.
+    * 텍스처에 대해 잘 모르면 기본 텍스처 포맷을 사용해도 무방하다.
+    * 최적화가 필요하면 텍스처 압축 포맷을 공부해야 한다.
+  * https://docs.unity3d.com/kr/2023.1/Manual/class-TextureImporterOverride.html
+  * https://docs.unity3d.com/kr/2023.1/Manual/texture-compression-formats.html
+  * https://docs.unity3d.com/kr/2018.4/Manual/class-TextureImporterOverride.html
 * 텍스처는 2D 스프라이트, 메시, 파티클 시스템, GUI, 지형 높이 맵(Terrain Heightmap)에 사용된다.
+
+<details>
+<summary>텍스처 타입 및 임포트에 대한 자세한 내용 <i>(클릭하면 펼쳐집니다.)</i></summary>
+
 * 텍스처 타입
   * Default
   * 노멀 맵: 컬러 채널을 실시간 노멀 매핑에 적합한 포맷으로 변환할 때 사용
@@ -919,6 +1182,8 @@ var query2 = words.
   * 이방성 필터링
     * Aniso 레벨을 높이면 지표각에서 보이는(기울인) 텍스처 품질 향상
     * 바닥과 천장 텍스처에 사용하면 좋다.
+
+</details>
 
 ### 밉맵(Mip Map)
 
@@ -1009,7 +1274,10 @@ var query2 = words.
 > 디자인 패턴 각각을 완벽하게 외우기보다, 아래 질문에 대해 생각해보면 좋습니다.
 
 * *디자인 패턴을 적용해본 적이 있는가?*
-* *디자인 패턴을 따로 익혀야 한다고 생각하는가?*
+* *디자인 패턴을 따로 외우고 익혀야 한다고 생각하는가?*
+
+<details>
+<summary><b>디자인 패턴 상세히 알아보기</b> <i>(클릭하면 펼쳐집니다.)</i></summary>
 
 ### Singleton 패턴
 
@@ -1021,9 +1289,9 @@ var query2 = words.
 
 > https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview/blob/main/DesignPattern/NullObjectPattern.md
 
-* 함수의 반환값으로 null 대신 null과 같은 역할을 하는 dummy 오브젝트를 생성하여 반환한다.
+* 함수의 반환값으로 `null` 대신 `null`과 같은 역할을 하는 dummy 오브젝트를 생성하여 반환한다.
 * Dummy 오브젝트를 받으면 아무 연산도 수행하지 않도록 구현한다.
-* null 체크를 안 해도 된다.
+* `null` 체크를 안 해도 된다.
 
 ### Strategy 패턴
 
@@ -1071,6 +1339,8 @@ var query2 = words.
   * 복잡해지고 느려진다.
   * 멀티스레딩 환경에서 실행과 구독 취소가 동시다발적으로 발생하면 버그가 쉽게 생긴다.
 
+</details>
+
 ## 운영체제
 
 > 게임 클라이언트가 아닌 개발 직군에서는 많이 묻지만, 게임 클라이언트에서는 잘 묻지 않는 것 같기도 합니다.  
@@ -1103,6 +1373,8 @@ var query2 = words.
   * 멀티프로세스든 멀티스레드든 동기화 이슈는 중요하다.
 
 ### Memory Fragmentation
+
+> **중요!**
 
 * 외부 단편화
   * 남은 메모리 총합은 충분한데 각각이 다 쪼개져 있어 하나의 큰 메모리 공간을 할당할 수 없는 경우
@@ -1163,6 +1435,8 @@ var query2 = words.
 
 ### Deadlock (교착 상태)
 
+> **중요!**
+
 * A를 잡은 스레드가 B를 갖고 싶어하고, B를 잡은 스레드가 A를 갖고 싶어하는데, A와 B 모두 상호 배제가 필요한 자원이고, 서로가 자신이 가진 것을 놓을 생각이 없다면 데드락이 발생한다. 이때 누구라도 A와 B를 모두 잡는 경우는 평생 생기지 않는다.
 * 다음 네 가지 조건을 **모두 만족해야** 데드락이 발생한다.
   1. 어떤 자원에 대해 상호 배제가 필요하다.
@@ -1203,6 +1477,17 @@ var query2 = words.
   * 역시 starvation 문제가 있다.
   * CPU burst time을 측정하기 어렵다.
 
+### 32비트 vs. 64비트 운영체제
+
+* *"32비트와 64비트의 차이가 무엇인가요?"*
+
+* 둘의 차이는 사용할 수 있는 RAM의 크기이다.
+  * 32비트는 최대 4GB(=$2^{32}$ bytes)의 메모리만 인식한다.  
+    Windows에서는 `x86`으로 불린다.
+  * 64비트는 최대 16EB(=$2^{64}$ bytes)의 메모리를 인식한다.
+    Windows에서는 `x64`로 불린다.
+* 64비트 운영체제에서 64비트 프로그램을 돌리는 것이 32비트 프로그램을 돌리는 것보다 당연히 빠르다.
+
 ## 데이터베이스
 
 ### Key
@@ -1216,11 +1501,26 @@ var query2 = words.
 
 ### 정규형
 
-> https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview/blob/main/DB/%EC%A0%95%EA%B7%9C%ED%98%95.md
+> https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview/blob/main/DB/%EC%A0%95%EA%B7%9C%ED%98%95.md  
 > DB 설계에 도움이 되는 내용입니다.
 
 ## 통신
 
+### 멀티플레이어 게임의 구조
+
+> https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/  
+> https://www.photonengine.com/ko-kr/fusion
+
+* *각 토폴로지의 장점과 단점을 공부하면 좋습니다.*
+
+* 네트워크 토폴로지
+  * 전용 서버(dedicated server)
+  * 플레이어 호스트
+  * 분산 권한(distributed authority)
+
 ### 원격 프로시저 호출 (RPC)
 
-> RPC가 무엇의 약자인지, 어떤 상황에서 필요한지 등을 공부하면 좋습니다.
+* *RPC가 무엇의 약자인지, 어떤 상황에서 필요한지 등을 공부하면 좋습니다.*
+
+* RPC와 REST의 차이
+  * https://aws.amazon.com/ko/compare/the-difference-between-rpc-and-rest/
