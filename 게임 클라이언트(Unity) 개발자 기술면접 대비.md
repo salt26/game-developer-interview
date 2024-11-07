@@ -157,8 +157,8 @@
   <summary>가. 아는 것처럼 최대한 둘러대며 그럴듯한 답을 이야기한다. <i>(클릭하면 펼쳐집니다.)</i></summary>
 
   많은 지원자들이 최선을 다하는 태도를 보여주고자 이렇게 대답한다.  
-  그러나 면접관 입장에서는 가장 뽑고 싶지 않은 사람일 수 있다.  
-  같이 일하는 동료가 이런 사람이라면 검증되지 않은 잘못된 정보가 사실인 것처럼 전파될 수 있다.  
+  그러나 면접관 입장에서는 가장 뽑고 싶지 않은 유형일 수 있다.  
+  같이 일하는 동료가 이런 사람이라면 검증되지 않은 불확실한 정보가 사실인 것처럼 전파될 수 있다.  
   의도는 좋았을지 몰라도 거짓말을 하고 있는 것이다.  
   또한 이런 습관은 자신의 부족함을 인정하지 않는 태도로 비칠 수 있으며, 선입견에 갇혀 있기 쉬워 자신의 성장에도 방해가 된다.
 
@@ -178,13 +178,13 @@
   <details>
   <summary>다. 깔끔하게 잘 모르겠다고 말한다. <i>(클릭하면 펼쳐집니다.)</i></summary>
 
-  지원자가 이런 대답을 하기는 쉽지 않다.  
+  지원자가 이렇게 대답하기는 쉽지 않다.  
   실력이 부족하고 최선을 다하지 않는 사람처럼 보일 것에 대한 두려움 때문이다.  
   그러나 면접관에게는 꽤 호감을 주는 대답일 수 있다.  
   자신이 무엇을 모르는지 분명히 알고 있고, 정직하게 검증된 내용만을 전달하려 한다는 인상을 주기 때문이다.
 
   물론 너무 많은 질문에 대해 모른다고 답하면 실력 부족으로 떨어질 수 있다.  
-  그러나 반대로, 지원자가 모든 질문에 완벽히 답할 수 있다면 그런 회사는 가면 안 된다.  
+  그러나 반대로, 지원자가 모든 질문에 완벽히 답할 수 있다면 그 회사는 가면 안 된다.  
   그 회사에서 일하는 동안 자신이 성장할 수 없기 때문이다.
 
   </details>
@@ -222,7 +222,7 @@
 
 ### 신규 입사자로서 느끼는 점
 
-> 첫 회사를 다닌 지 한 달이 조금 넘은 신입의 개인적인 감상입니다.  
+> 첫 회사를 다닌 지 한두 달 된 신입의 지극히 주관적인 감상입니다.  
 > 저는 현재 게임 개발자를 돕는 도구를 만드는 일을 맡고 있습니다.  
 > 일반적인 게임 클라이언트 개발자와 경험이 상이할 수 있습니다.
 
@@ -234,18 +234,25 @@
     * 게임 제작 부서에 들어갔다면 성장할 여유도 없이 익숙한 기술에 더 숙달되기 위한 훈련만을 반복했을 것 같다.
     * 반면 현재 속한 부서에서는 여유 있게 새로운 기술을 도입해 볼 수 있고, 개인의 성장을 도모할 수 있으며,
       회사가 안고 있는 개발 과정 상의 여러 문제점을 해결하여 유의미한 기여를 할 수 있다.
-  * 회색 직장인이 되지 않고 '살아 있는 나'로 남아 있기 위해 고민을 하게 된다.
-    * 나는 '코더'가 아니라 '프로그래머'이자 '아키텍처'다.
-    * 할 일이 명시적으로 주어지지 않아도, 추구하고자 하는 가치를 고려하여 스스로 문제를 정의하고 할 일을 찾아서 해야 비로소 '프로그래머'가 된다.
+  * 회색 직장인이 되지 않고 '깨어 있는 나'로 남아 있기 위해 고민을 하게 된다.
+    * 나는 '코더'가 아니라, '프로그래머'이자 '아키텍처'이다.
+    * 할 일이 명시적으로 주어지지 않아도, 회사가 나아가고자 하는 가치와 내가 추구하는 가치를 고려하여
+      스스로 문제를 정의하고 할 일을 찾아서 해야 비로소 '프로그래머'가 된다.
   * **내가 가장 열정을 쏟고 싶은 일이 회사에서 맡은 일과 같아질 수 있을지 고민해보게 된다.**
     * 이것이 가능하다면 최적의 회사, 최적의 직무를 찾은 것이다.
 * 면접을 준비하기 위해 공부했던 것보다 더 많은 것을 짧은 시간 동안 배우게 된다.
   * 처음 배우는 기술로 더듬더듬 작성한 코드가 성공적으로 돌아가고 거대한 프로젝트에 병합될 때의 뿌듯함은 이루 말할 수 없다.
   * 먼 훗날에 다른 회사를 가더라도 유용하게 쓰이는 기술이라고 생각하면 **공부하는 것이 즐거워서 동료에게 질문을 끊임없이 하게 된다.**
+  * 실제로 요즘에는 쉬는 시간에나 퇴근 후에 개발 공부를 하는 날이 잦아졌다.
+  * 회사 밖에서는 배우고 싶어도 배울 수 없었던 것들이 너무나도 많았음을 알게 된다.
   * 기술은 회사에 쌓이는 것이 아니다. 개인에게 남는 것이다.
+* 뛰어난 개발자는 열린 태도를 가진 개발자이다.
+  * 자신이 알고 있던 것보다 더 효과적이고 효율적으로 문제를 해결하는 방법을 알게 되었다면 과감히 새로운 것을 받아들일 자세가 필요하다.
+  * 더이상 배울 것이 없다면 다른 회사나 직무로 옮길 타이밍이라고 생각한다.
+  * 더이상 배우고 싶지 않다면 개발자를 그만두는 것이 옳다고 생각한다.
 * 신입이 해야 할 역할이 분명히 있다.
   * 어떤 회사도 완벽한 조직일 수 없다. 누구나 사내의 문제점을 알지만, 이를 해결할 의지를 가지고 추진할 수 있는 사람은 신입밖에 없다.
-  * 동료들이 경력이 많고 기술적으로 뛰어나다고 해도, 신입이 그들보다 잘 할 수 있는 영역이 분명 존재한다.
+  * 동료들이 경험이 많고 기술적으로 뛰어나다고 해도, 신입이 그들보다 잘 할 수 있는 영역이 분명 존재한다.
 
 ## 기술면접 대비 예상 질문
 
@@ -272,6 +279,8 @@
   * "C#의 Reflection에 대해 설명해 보세요."
   * "Unity 프로파일러를 사용해 본 경험에 대해 이야기해 주세요."
   * **"Unity로 개발하면서 언제 최적화를 해야 한다고 생각하나요?"**
+  * C#의 `async`, `await`에 대한 질문을 만들어야 한다. -------------------------------------------------------------------------------------------
+  * "Unity에서 에셋을 동적으로 로드하는 방법들을 설명하고 각각의 장단점을 이야기해 보세요."
   * "최근에 나온 Unity 6의 최신 기능 중 하나를 설명해 보세요."
 
 * Unity 그래픽스
@@ -380,17 +389,21 @@
 
 ### Stack / Heap Memory
 
-> 메모리 그림을 검색해서 같이 보면서 공부하시면 좋습니다.
+> 아래 링크에 있는 가상 메모리 그림을 같이 보면서 공부하시면 좋습니다.  
+> https://stackoverflow.com/questions/32418750/stack-and-heap-locations-in-ram 
+> https://open4tech.com/concept-heap-usage-embedded-systems/
 
-* 높은 주소 쪽에 Stack이 있다.
+* 실제 메모리(RAM)의 주소가 아니라, 한 프로세스에 할당된 **가상 메모리에서의 주소 공간**을 다룬다.
+* **높은 주소 쪽에 Stack이 있다.**
   * 쌓일수록 아래로(낮은 주소 쪽으로) 내려온다.
-  * 컴파일러가 관리하며, 실행할 수 없다.
-  * 값 타입을 저장한다.
+  * 컴파일러는 호출 스택에 pop하고 push하는 머신 코드를 생성할 뿐이고, 이러한 instruction들이 스택을 관리한다.
+  * 실행할 수 없다.
+  * **값 타입을 저장한다.**
   * 변수의 사용 범위를 벗어나면 금방 pop되어 수명이 짧은 편이다.
-* Stack보다 아래에 Heap이 있다.
+* **Stack보다 아래에 Heap이 있다.**
   * 쌓일수록 위로(높은 주소 쪽으로) 올라간다.
   * 프로그래머가 관리하며, 실행할 수 없다.
-  * 동적 할당한 객체(참조 타입)를 저장한다.
+  * **동적 할당한 객체(참조 타입)를 저장한다.**
   * Unity에서의 관리되는 메모리 시스템
     * https://docs.unity3d.com/kr/current/Manual/performance-managed-memory.html
 * 그 아래에 Static data가 있다. 쓸 수 있고 실행할 수 없다.
@@ -576,17 +589,20 @@
 
 ### C# Boxing & Unboxing
 
-> https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/built-in-types
+> https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/built-in-types  
+> https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/types/boxing-and-unboxing
 
 * 값 타입
   * C#의 primitives(`int`, `float` 등), 구조체(`struct`), 열거(`enum`) 타입이 여기에 속한다.
   * `System.ValueType`으로부터 상속된다.
   * 스레드 스택에 할당된다.
+  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/value-types
 * 참조 타입
   * C#의 클래스(`class`), 문자열(`string`) 타입이 여기에 속한다.
   * `System.Object` 또는 `System.String`으로부터 상속된다.
   * 힙에 할당되며 GC(garbage collector)가 관리한다.
     * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
+  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/reference-types
 * Boxing: 값 타입을 참조 타입으로 변환
 * Unboxing: 참조 타입을 값 타입으로 변환
 * Boxing과 unboxing은 동적 할당을 만드므로 비싸다.
@@ -621,12 +637,25 @@
   }
   ```
 
+  * `string.Concat(object a, object b, object c)` 사용
+
+  ```csharp
+  // 값 타입인 42와 true가 object 타입으로 boxing된 후에 string으로 변환된다.
+  string answer = string.Concat("Answer", 42, true);
+  ```
+
+  > [!NOTE]
+  > `string.Concat()`에는 여러 버전이 있고, 그 중 인자로 문자열만 받는 버전을 사용하면 boxing이 일어나지 않는다.
+
+* 참조 타입을 참조 타입으로 변환하는 경우는 boxing의 사례가 아니다.
+
 ### Unity Serialization / Deserialization
 
 * 직렬화
   * (동적 할당을 통해 저장된) 객체를 바이트 단위로 변환하여 데이터화하는 것
   * 직렬화를 하면 디스크에 저장하거나 네트워크를 통해 전송하기 용이하며 프로그램의 실행이 멈추어도 데이터를 보존할 수 있다.
 * 역직렬화
+  * *역직렬화의 정의는 직접 생각해 보시기 바랍니다.*
 * Unity에서 어떤 클래스를 직렬화하려면 어떻게 해야 하는가?
   * 추상 클래스나 일반 클래스가 아니어야 하고
   * 클래스 앞에 `[Serializable]` 데코레이터를 붙이고
@@ -645,17 +674,16 @@
     * 다른 언어와 쉽게 호환된다.
     * 동적 타입을 사용하는 언어(JavaScript 등)에서 유리하다.
   * 단점
-    * 용량이 크다.
-    * 직렬화 및 역직렬화 시간이 오래 걸린다.
+    * 용량이 크다.  
+      이는 garbage를 많이 생성한다는 뜻이다.
+    * 직렬화 및 역직렬화 시간이 오래 걸린다.  
+      문자열 파싱 및 결합이 필요하기 때문이다.
+    * Random access가 어렵다.  
+      특정한 key에 해당하는 값 하나를 가져오려면 전체를 파헤쳐야 한다.
+    * 데이터 조작이 쉬워 보안에 취약하다.
   * Unity에서는 [`Newtonsoft.JSON`](https://www.newtonsoft.com/json)과 [`UnityEngine.JsonUtility`](https://docs.unity3d.com/kr/2021.2/Manual/JSONSerialization.html)를 사용할 수 있다.
-    * *나중에 둘의 차이를 알아두면 좋습니다.*
+    * *면접에서 이것까지 묻지는 않겠지만, 나중에 둘의 차이를 알아두면 좋습니다.*
 * `BinaryFormatter`는 [보안 취약점(code injection)이 발견되었으므로](https://discussions.unity.com/t/should-i-avoid-using-binaryformatter-altogether/245535/3) 사용하지 않아야 한다.
-* 고려해 볼 수 있는 서드 파티 바이너리 직렬화 라이브러리
-  * Google의 [Protocol Buffers (Protobuf)](https://protobuf.dev/)
-  * Google의 [FlatBuffers](https://flatbuffers.dev/)
-  * Cysharp의 [MemoryPack](https://github.com/Cysharp/MemoryPack)
-  * [MessagePack](https://msgpack.org/)
-  * [Cap'n Proto](https://capnproto.org/)
 
 ### C# `string`
 
@@ -818,12 +846,15 @@
   Func<int> increment = () => ++i;            // 람다 식 바깥의 지역 변수 i 포착
   ```
 
-* C#의 메서드 참조는 참조 형식이므로 힙에 할당된다.
+* C#의 메서드 참조(delegate)는 참조 형식이므로 힙에 할당된다.
   * 즉, 익명 메서드이든 미리 정의된 메서드이든 메서드 참조를 인자로 전달하면 임시 할당이 발생한다.
 * 익명 메서드를 클로저로 전환하면 메모리 양이 상당히 증가한다.
   * 클로저를 만들면 정확한 값을 전달하기 위해 외부 범위 변수를 유지할 수 있는 익명 클래스를 만들고 이것을 인스턴스화하여 힙에 할당한다.
   * 가급적 클로저보다는 익명 메서드를 쓰는 것이 좋다.
+* 클로저는 boxing에 의한 할당인가?
+  * https://stackoverflow.com/questions/37977757/does-closure-involves-boxing
 * `static` 키워드를 붙여 [정적 익명 함수](https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions)를 만들면 지역 변수를 실수로 포착하여 클로저가 되는 현상을 방지할 수 있다.
+  * *면접에서 이런 것까지 묻지는 않을 것입니다.*
 
 ### C#과 Unity의 `null`
 
@@ -1048,12 +1079,29 @@ var query2 = words.
   * [`delegate` 사용 시 할당을 줄이는 법](https://www.jacksondunstan.com/articles/3765)
   * [`struct` 사용 시 할당을 줄이는 법](https://medium.com/@swiftroll3d/avoiding-mistakes-when-using-structs-in-c-b1c23043fce0)
 
+### C# `async` & `await`
+
+* 작성 예정 -------------------------------------------------------------------------------------------
+
+### Unity Addressable
+
+> https://docs.unity3d.com/Packages/com.unity.addressables@2.3/manual/index.html  
+> https://medium.com/pinkfong/unity-addressable-asset-%EB%A5%BC-%EC%99%9C-3017f3fa2edc
+
+* Unity에서 에셋을 런타임에 동적으로 로드하는 방법은 세 가지가 있다.
+  * `Resources` 폴더
+  * 에셋 번들 (Asset bundle)
+  * 어드레서블 (Addressable)
+* 그 중 어드레서블은 최근에 나온 에셋 관리 방법이다.
+* 정리해줘야겠지? --------------------------------------------------------------------------------------------------
+
 ### Unity 6
 
 > https://unity.com/blog/unity-6-features-announcement
 > https://unity.com/kr/blog/engine-platform/unity-6-preview-release
 
-* *Unity 6가 이 글을 편집하는 중에 출시되었고, 최신 동향을 묻는 질문으로 Unity 6에서 소개된 새 기능을 묻는 질문이 나올 수도 있습니다.*
+* *Unity 6가 이 글을 편집하는 중에 출시되었습니다.*  
+  *최신 동향을 묻는 질문으로 Unity 6에서 소개된 새 기능을 묻는 질문이 나올 수도 있습니다.*
 
 ## Unity 그래픽스
 
