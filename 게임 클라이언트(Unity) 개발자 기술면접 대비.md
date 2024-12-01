@@ -113,17 +113,17 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * 기술면접에서도 인성면접에서 할 법한 질문이 많이 나온다.
   * **자신이 쓴 서류의 내용에 대해 완벽히 이해하고 설명할 수 있어야 한다.** ⭐
-    * 자신이 했다고 서류에 적은 내용 중 어느 하나라도 기억나지 않는 것이 있다면 장담건대 100% 떨어진다.  
+    * 자신이 했다고 서류에 적은 내용 중 어느 하나라도 기억나지 않는 것이 있다면 *장담건대* 100% 떨어진다.  
       설명할 수 없는 경험은 서류에서 과감히 빼야 한다.
   * **회사의 인재상에 대해 숙지하고 가야 한다.**
   * 평소에 "왜?"에 대한 질문을 많이 던져봐야 한다.
-    * *"왜 대학원 안 가고(또는 그만두고) 회사로 왔는지?"*
-    * *"다른 개발 직군 많은데 왜 게임 업계로 왔는지?"*
-    * *"왜 기획자도 서버 프로그래머도 아닌 클라이언트 프로그래머로 지원했는지?"*
-    * *"왜 우리 회사여야 하는지?"*
-    * *"회사에서 가장 배우고 싶은 것이 무엇인지?"*
-    * *"팀원과 갈등을 겪었던 경험?"*
-    * *"기획자가 정말 말도 안 되는 것을 꼭 구현해야 한다고 주장하고 이를 굽히지 않을 때, 프로그래머로서 어떻게 대처할 것인가?"*
+    * *"왜 대학원 안 가고(또는 그만두고) 회사로 왔나요?"*
+    * *"다른 개발 직군 많은데 왜 게임 업계로 왔나요?"*
+    * *"왜 기획자도 서버 프로그래머도 아닌 클라이언트 프로그래머로 지원했나요?"*
+    * *"왜 우리 회사여야 하나요?"*
+    * *"회사에서 가장 배우고 싶은 것이 무엇인가요?"*
+    * *"팀원과 갈등을 겪었던 경험이 있나요?"*
+    * *"기획자가 정말 말도 안 되는 것을 꼭 구현해야 한다고 주장하고 이를 굽히지 않을 때, 프로그래머로서 어떻게 대처할 것인가요?"*
 
 * 편하게 진행한다고 하지만 지원자 입장에서 암묵적인 압박을 받는다는 느낌이 들 수 있다.
   * 지원자 스스로 굉장히 자랑스럽게 여기고 잘 했다고 생각하는 것에 대해 *"이런 부분이 아쉬운데 더 잘 할 수는 없었을까요?"* 라고 묻는다.
@@ -379,7 +379,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 * 통신
   * ["멀티플레이어 게임에서 전용 서버 방식과 호스팅 방식의 차이를 설명해 보세요."](#멀티플레이어-게임의-구조)
   * ["RPC가 언제 사용되는지 설명해 보세요."](#원격-프로시저-호출-rpc)
-  * "플레이어가 재화를 획득하는 로직을 클라이언트와 서버 중 어디에 두어야 한다고 생각하세요?" *(직접 답해보세요.)*
+  * "플레이어가 재화를 획득하는 로직을 클라이언트에 둘 때와 서버에 둘 때 각각 어떤 장단점이 있나요?" *(직접 답해보세요.)*
   * "실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 길면 안 되겠죠? 클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요." *(직접 답해보세요.)*
 
 ## Unity & C# 스크립팅
@@ -471,8 +471,8 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 > ⭐ **중요!**
 
-* *.NET과 Unity의 GC가 어떻게 다른지 설명할 수 있는가?*
-* *`GC.Collect()` 함수를 명시적으로 호출해본 적이 있는가?*
+* *".NET과 Unity의 GC가 어떻게 다른지 설명할 수 있나요?"*
+* *"`GC.Collect()` 함수를 명시적으로 호출해본 적이 있나요?"*
 
 #### GC를 쓸 때의 장점
 
@@ -868,7 +868,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
     * 멀티스레딩 환경에서 `null` 체크 통과 후 다른 스레드에서 등록 취소를 하면 대리자가 `null`인 경우가 생길 수 있다.
   * `?.`(null conditional operator)를 사용하는 것이 스레드로부터 안전하다.
     * 이 연산자는 atomic하기 때문에 멀티스레딩 환경에서도 `null` 체크와 호출을 동시에 해준다.
-    * 문제가 있다면, Unity에서는 `?.`을 잘 쓰기 어렵다. [자세한 내용은 C#과 Unity의 `null` 참고.](#c과-unity의-null)
+    * 문제가 있다면, Unity에서는 `?.`이 의도대로 동작하지 않을 수 있다. [자세한 내용은 C#과 Unity의 `null` 참고.](#c과-unity의-null)
 
 ### Lambda, Anonymous Method & Closure
 
@@ -911,21 +911,29 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 ### C#과 Unity의 `null`
 
 > https://stackoverflow.com/questions/62678228/why-does-c-sharp-null-conditional-operator-not-work-with-unity-serializable-vari  
+> https://github.com/JetBrains/resharper-unity/wiki/Possible-unintended-bypass-of-lifetime-check-of-underlying-Unity-engine-object  
 > ⭐ **중요!**
 
-* *Unity의 Fake null에 대해 설명해 보세요.*
+* *"Unity의 fake null에 대해 설명해 보세요."*
 
-* Unity에서는 null 검사를 위해 `==`과 `!=`을 커스텀으로 구현했다.
-  * Unity 엔진의 백엔드는 C++로 짜여 있고, Unity C#의 문법들은 이 C++ 엔진과 소통하기 위한 개발자 API이다.
-  * C#의 `System.Object`가 null이 아니더라도(Unity 객체의 메타데이터가 잔존하는 상태) Unity에서 `Destroy()`한 `UnityEngine.Object`에 대해서는(C++에서는 없어진 객체) `obj == null`이 `true`가 나온다.
-    * Unity 내부의 C++에서의 객체가 `null`이면 C#의 `UnityEngine.Object`도 `null`이지만, C#의 GC가 돌기 전까지는 C#의 `System.Object`가 `null`이 아니다.
-    * 이를 **Fake null**이라고 한다.
-  * 그러나 **`?.`(null conditional operator)의 경우 `UnityEngine.Object`가 아니라 `System.Object`의 null 여부를 검사하기 때문에 `UnityEngine.Object`에 대해서는 사용할 수 없다.**
-    * `?.`는 오버라이드할 수 없다.
-  * Unity에서 `Destroy()`한 오브젝트에 접근하는 경우 `NullReferenceException`이 아니라 `MissingReferenceException`이 뜨는데, 이는 Unity에서 뭔가 처리하는 로직(fake null)이 있음을 의미한다.
-* Unity의 null 비교는 느리다.
+* `null`은 [널]이라고 읽는다.
+* Unity 엔진의 백엔드는 C++(IL2CPP 또는 Mono)로 짜여 있고, Unity C#의 문법들은 이 C++ 엔진과 소통하기 위한 개발자 API이다.
+* `UnityEngine.Object`를 `Destroy()`하여 C++ 네이티브 엔진의 객체를 `null`로 만들고 `UnityEngine.Object`을 `null`인 것처럼 표시해도(fake null) .NET의 `System.Object`는 `null`이 아니다.
+  * 해당 `UnityEngine.Object`의 메타데이터가 잔존하고, 이를 가리키는 참조를 다른 게임오브젝트나 컴포넌트들이 여전히 가지고 있기 때문이다.
+  * .NET GC가 돌기 전까지는 객체가 메모리에서 해제되지 않으며, GC가 실행되어도 참조받고 있지 않은 객체만을 찾아 지우기 때문에 이 `UnityEngine.Object`의 base인 .NET의 `System.Object`가 즉시 `null`이 되지는 않는다.
+  * 그러나 C#에서 `Destroy()`를 호출하면 C++ 네이티브 엔진에서는 객체가 `null`이 된다.
+    * 참고로 이 과정은 무겁다. C++에서 객체를 없애는 함수를 호출하여, 룩업을 수행하고 C# 스크립트 레퍼런스를 C++ 네이티브 레퍼런스로 전환하는 과정을 거친다.
+  * 즉, `Destroy()` 호출 시 C++ 네이티브 엔진에서는 객체가 `null`이 되어 있지만 C#에서는 `System.Object`가 `null`이 아닌 상태로 남아 있고, 이것이 파괴된 C++의 객체를 가리키고 있게 된다.
+  * 이때 개발자가 `Destroy()`한 객체를 계속 사용하면 문제가 생긴다.
+  * 따라서 실제로는 `System.Object`가 `null`이 아니지만 `UnityEngine.Object`가 `null`인 것처럼 표시하여 이 객체를 Unity에서 사용하지 못하게 하는 것이다.
+  * 이를 위한 장치로써 Unity에서 `==`과 `!=`를 오버라이드하여 C++ 객체의 존재 유무를 확인하고 `System.Object`와 무관하게 `null` 여부를 반환한다.
+  * 이를 **fake null**이라고 한다.
+  * Unity에서 `Destroy()`한 오브젝트에 접근하는 경우 `NullReferenceException`이 아니라 `MissingReferenceException`이 뜨는데, 이는 Unity의 fake null 로직이 있기 때문이다.
+* 그러나 **`is null`(pattern matching), `?.`(null conditional operator), `??`(null coalescing operator)의 경우 `UnityEngine.Object`가 아니라 `System.Object`의 `null` 여부를 검사하기 때문에 `UnityEngine.Object`가 `Destroy()`되었는지 확인할 때에는 사용할 수 없다.**
+  * 이들 연산자는 C# 문법 상 오버라이드할 수 없다.
+* Unity의 `null` 비교는 느리다.
   * `UnityEngine.Object`가 살아있는지 검사하는 로직이 무겁기 때문이다.
-  * 이것이 살아있다는 것이 확실하면(`Destroy()`된 객체가 아님을 보장할 수 있다면) 다음 세 가지 방법으로 null 비교 속도를 빠르게 할 수 있다.
+  * 이것이 살아있다는 것이 확실하면(`Destroy()`된 객체가 아님을 보장할 수 있다면) 다음 세 가지 방법으로 `null` 비교 속도를 빠르게 할 수 있다.
     1. `System.Object`로 캐스팅하는 방법
     2. `System.Object.ReferenceEquals()`로 비교하는 방법
     3. 패턴 매칭 `is null`을 이용하는 방법
@@ -1167,14 +1175,33 @@ var query2 = words.
   * 에셋 번들 (Asset bundle)
   * 어드레서블 (Addressable)
 * 그 중 어드레서블은 최근에 나온 에셋 관리 방법이다.
-* *자세한 내용은 위의 링크를 참고하세요.*
+  * *자세한 내용은 위의 링크를 참고하세요.*
+* 에셋을 원격으로 배포하고 동적으로 로드해야 하는 이유?
+  * 빌드 과정 중 에셋 패킹 과정이 있다.
+  * 빌트인 에셋: 모든 에셋을 빌드 파일에 담아서 배포
+    * 장점: 게임 설치 파일에 이미 들어있기 때문에 설치 후 인터넷 없이도, 추가 다운로드 없이도 플레이할 수 있다.
+    * 단점: 빌드 파일(`.apk`, `.aab`, `.ipa` 등)이 GB 단위의 용량을 쉽게 넘길 수 있다.
+  * 모바일 스토어에서는 용량이 큰 빌드 파일의 업로드를 제한한다.
+    * [Google Play Store](https://support.google.com/googleplay/android-developer/answer/9859372?hl=ko): `.apk` 100MB 이하 / `.aab` 4GB 이하 (200MB 초과 시 경고)
+    * [Apple App Store](https://developer.apple.com/kr/help/app-store-connect/reference/maximum-build-file-sizes/): 500MB 이하
+  * 원격 콘텐츠 배포: 에셋을 필요할 때 다운로드받아 동적 로드
+    * 장점
+      * 게임 설치 시 사용자의 부담이 크게 완화된다. 특히 200MB 초과 경고가 뜨면 설치하지 않는 사용자 비율이 유의미하게 늘어난다.
+      * 사용자 기기 용량 부족 시 우리 앱이 삭제될 확률을 줄인다. 삭제할 앱을 찾을 때 용량이 큰 것부터 지우기 때문이다.
+      * 앱 업데이트 없이 빠르게 에셋을 패치할 수 있다. 버그를 수정한 빌드를 스토어에 올리려면 심사가 오래 걸리므로 배포가 늦고 그동안 고객 문의 폭탄을 받을 것이다.
+      * Lazy 다운로드가 가능하다. 튜토리얼 할 때부터 최종 콘텐츠를 받아 놓을 필요는 없다.
+    * 단점
+      * 프로그래머로서 관리가 까다롭다.
+      * 게임 설치 후에도 추가 다운로드 시간과 셀룰러 데이터가 요구된다.
+      * 새 버전 배포 시 CDN(콘텐츠 전송 네트워크)에도 새 에셋을 올리는 과정이 필요하다.
+      * CDN 비용이 든다.
 
 ### Unity 프로파일러
 
 > https://docs.unity3d.com/kr/2021.3/Manual/Profiler.html
 > https://learn.unity.com/tutorial/diagnosing-performance-problems-2019-3?language=en&courseId=5c87de35edbc2a091bdae346#648abf6eedbc2a6ad72aff24
 
-* *과거에 진행했던 프로젝트에서 프로파일러를 써본 경험을 말씀해 주세요.*
+* *"과거에 진행했던 프로젝트에서 프로파일러를 써본 경험을 말씀해 주세요."*
 
 * CPU, GPU, Garbage Collection Profiling 등이 가능하다.
   * 대부분은 Rendering 관련 이슈일 것이다. 이 경우 CPU가 병목인지 GPU가 병목인지 찾아야 한다.
@@ -1195,8 +1222,9 @@ var query2 = words.
 * *"개발 중 언제 최적화를 진행하시나요?"*
 
 * *제 생각에, 최적화를 개발 초기 단계부터 생각할 필요는 없습니다.*
-  * *일단 돌아가는 코드를 짜고, 기능을 만든 후에, 프로그램을 돌려보면서 병목이 생기면 그때 최적화를 고려해도 늦지 않습니다.*
-  * *무엇이 병목일지 모르는 상황에서 미리 대처해 봤자, 다른 곳에서 병목이 생기면 이전의 대처는 별 의미가 없게 됩니다.*
+  * *최적화가 필요하다는 생각이 들면 정말 최적화가 꼭 필요한지 두 번 더 고민하세요.*
+  * *일단 돌아가는 코드를 짜서 기능을 만든 후에, 프로그램을 돌려보면서 병목이 생기면 그때 최적화를 고려해도 늦지 않습니다.*
+  * *무엇이 병목일지 모르는 상황에서 미리 대처해 봤자, 다른 곳에서 병목이 생기면 이전의 대처는 큰 의미가 없게 됩니다.*
   * *어떤 코드가 주어질 때 이것이 어떤 성능 문제를 일으킬 수 있는지 포착할 수 있고, 이를 어떻게 고쳐야 하는지 알고 있다면 충분합니다.*
 
 * **아래 세 문서를 모두 읽어보시기를 강력히 추천합니다!**
@@ -1442,7 +1470,7 @@ var query2 = words.
 > https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EC%86%8C%EB%93%9C_%ED%85%8C%EC%9D%B4%EB%B8%94  
 > https://www.csharpstudy.com/DevNote/Article/28
 
-* *virtual class와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 오버라이드했을 때, 이 둘이 메모리에서 어떤 자료구조로 관리되는가?*
+"* *"virtual class와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 오버라이드했을 때, 이 둘이 메모리에서 어떤 자료구조로 관리되나요?"*
 
 * Virtual table(VTable)은 가상 메서드(virtual 또는 abstract)를 갖는 클래스를 상속하여 해당 메서드를 override할 때 생긴다.
   * 메서드 포인터를 저장하는 배열이다.
@@ -1459,8 +1487,8 @@ var query2 = words.
 > ⭐ **중요!**  
 > 디자인 패턴 각각을 완벽하게 외우기보다, 아래 질문에 대해 생각해보면 좋습니다.
 
-* *디자인 패턴을 적용해본 적이 있는가?*
-* *디자인 패턴을 따로 외우고 익혀야 한다고 생각하는가?*
+* *"디자인 패턴을 적용해본 적이 있나요?"*
+* *"디자인 패턴을 따로 외우고 익혀야 한다고 생각하나요?"*
 
 <details>
 <summary><b>디자인 패턴 상세히 알아보기</b> <i>(클릭하면 펼쳐집니다.)</i></summary>
@@ -1469,7 +1497,7 @@ var query2 = words.
 
 > https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview/blob/main/DesignPattern/SingletonPattern.md
 
-* *멀티스레드 환경에서 싱글톤을 써본 적이 있는가? 어떤 점을 고려해야 하는가?*
+* *"멀티스레드 환경에서 싱글톤을 써본 적이 있나요? 어떤 점을 고려해야 하나요?"*
 
 ### Null Object 패턴
 
@@ -1695,12 +1723,18 @@ var query2 = words.
 
 ## 통신
 
+### OSI 7계층
+
+> https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/
+
+* *직군에 상관없이 물어볼 수 있는, 네트워크에 대한 기초 내용입니다.*
+
 ### 멀티플레이어 게임의 구조
 
 > https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/  
 > https://www.photonengine.com/ko-kr/fusion
 
-* *각 토폴로지의 장점과 단점을 공부하면 좋습니다.*
+* *각 토폴로지의 장점과 단점을 공부하고 어떤 상황에 어떤 토폴로지가 적절한지 말할 수 있으면 좋습니다.*
 
 * 네트워크 토폴로지
   * 전용 서버(dedicated server)
@@ -1709,6 +1743,8 @@ var query2 = words.
 
 ### 원격 프로시저 호출 (RPC)
 
+* *"플레이어가 재화를 획득하는 로직을 클라이언트에 둘 때와 서버에 둘 때 각각 어떤 장단점이 있나요?"*
+* *"실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 길면 안 되겠죠? 클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요."*
 * *RPC가 무엇의 약자인지, 어떤 상황에서 필요한지 등을 공부하면 좋습니다.*
 
 * RPC와 REST의 차이
