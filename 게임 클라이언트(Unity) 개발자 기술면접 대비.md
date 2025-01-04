@@ -21,8 +21,6 @@
 오류 수정 제안이나 내용 추가는 언제든지 환영입니다!  
 Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
-1부 내용은 제 개인적 경험과 의견에 기반한 내용이므로 온라인에서의 수정 제안을 받지 않는 점 양해 바랍니다.
-
 ## 목차
 
 ### 1부: 팁과 개인적 조언
@@ -47,7 +45,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 * [디자인 패턴](#디자인-패턴)
 * [운영체제](#운영체제)
 * [데이터베이스](#데이터베이스)
-* [통신](#통신)
+* [네트워크 & 통신](#네트워크--통신)
 
 ---
 
@@ -110,6 +108,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 즉, 지원자가 우리 회사에 들어오기 위해서 **'최근에' 공부를 하는 열의를 보였는가**를 평가하는 자리이다.
   * 학교에서 가르쳐 준 적 없는 내용이 대부분이므로, "개발 많이 해 봤는데 나 정도면 충분히 붙겠지~" 하고 아무 준비 없이 가면 아무 대답도 하지 못할 것이다.
     * [뒤에 나올 내용들](#시작하기-전에)을 공부하고 가면 된다.
+
+* 단순한 지식을 묻는 질문보다, 본인이 직접 사용해 보고 경험해 보았는지 묻는 질문이 많이 나온다.
+  * [아래 자료](#시작하기-전에)를 공부하면서, 시간을 들여 **실습을 함께 진행할 것을 강력히 추천한다.**
+  * 외우기만 한 것과 써본 경험이 있는 것은 답변에서 그 차이가 드러난다.
 
 * 기술면접에서도 인성면접에서 할 법한 질문이 많이 나온다.
   * **자신이 쓴 서류의 내용에 대해 완벽히 이해하고 설명할 수 있어야 한다.** ⭐
@@ -296,11 +298,23 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * 회사라는 곳이 생각보다 행복한 곳일 수 있다.
   * 대학생이 막연히 갖는 두려움 중에, 회사에 꼰대들이 있고 이들이 신입을 무시하며 막 대할 것 같다는 생각들이 있다.
-    * 실제로 출근길에 쓰러져 응급실에 실려 갔는데 당일 오후에 출근하라고 하는 회사도 있다. *그런 회사는 당장 그만둬라.*
+    * 실제로 출근길에 쓰러져 응급실에 실려 갔는데 당일 오후에 출근하라고 하는 강제 노역소도 있다. *그런 곳은 당장 그만둬라.*
   * 하지만 오히려, **직원이 행복한 회사가 존재한다**는 사실을 많은 사람들이 알았으면 한다.
     * 빠른 퇴근을 독려하고, 아플 때 병가 사용 방법을 먼저 알려주며, 질문을 하면 친절히 답해주고, 신입에게 칭찬을 아끼지 않는 동료들이 있다.
+    * 신입을 보채지 않고 신입의 능력을 믿어주며 사내에서 좋은 경험을 다양하게 해볼 수 있도록 도와준다.
   * "나같은 사람도 받아준다고?" 해서 들어갔다가 한 달도 안 되어 퇴사를 고민할 바에는,
     취업 기간이 길어지더라도 사람을 존중할 줄 알고 문화가 자신과 잘 맞아서 다니는 것이 즐거운 회사를 끝까지 찾아보는 것을 추천한다.
+
+* 신입이 원하는 회사에 들어가려면 경력직을 금방 따라갈 정도의 내공을 쌓아야 한다.
+  * 신입이 첫 회사로 들어가기에는 대기업이 오히려 더 쉬울 수 있다.  
+    대기업은 신입을 대규모로 뽑아서 교육시킬 제도와 여유를 갖추고 있다.
+  * 스타트업은 그럴 여유가 없기 때문에 입사하자마자 1인분이 가능한 사람을 원한다.  
+    그래서 경력직을 선호하지만 경력직만 뽑는 것은 아니다.
+  * 취업과 성취를 목표로 공부하는 사람이 아닌, 새로운 것을 알게 되는 것이 재미있어서 스스로 파고드는 사람이 되면 내공은 저절로 쌓인다.
+    * 단, 파고드는 방향이 맡게 될 업무와 잘 맞는 회사에 지원해야 한다.
+  * 신입의 입사 전 경험은 이를 통해 내가 하고 싶은 일과 잘 할 수 있는 일이 무엇인지를 명확히 알게 되었다면 충분히 쌓은 것이다.  
+  * 무작정 스펙(남에게 보여지는 것)을 늘리기 위해 시간을 버릴 필요가 없다.
+  * 신입이 경력직보다 실무 경험이 부족한 것은 너무나도 당연하다. 뽑는 사람들도 이를 참작하고 뽑으므로, 경험 부족에 연연하지 않아도 된다.
 
 ---
 
@@ -308,14 +322,15 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * https://github.com/Romanticism-GameDeveloper/GameDeveloper-Client-Interview
   * 본 자료 내용의 대부분은 위 링크에서 가져왔습니다.
-    * 위 링크에는 여기에는 없는, C++ 및 Unreal에 대한 내용도 있습니다.
-  * 본 자료 내용 중 위 링크에 없는, 제가 추가한 내용도 있습니다.
+    * 위 링크에는 C++ 및 Unreal에 대한 내용도 있습니다.
+  * 본 자료 내용 중 위 링크에 없는, 새롭게 추가한 내용도 있습니다.
 * 나올 가능성이 높은 질문들은 ⭐ **중요!** 표시를 달아두었습니다.
 
 > [!WARNING]
 > **본 자료 내용에는 오류가 있을 수 있습니다.**  
 > 모든 내용을 그대로 외우기보다는, 다른 자료도 찾아보고 내용을 검증하면서 공부하시면 학습에 도움이 될 것입니다.  
-> 그리고 시간이 충분하다면 여기서 얻은 기술을 Unity 프로젝트에 직접 적용해 보면서 자신의 것으로 흡수하시기 바랍니다.
+> 그리고 시간이 충분하다면 여기서 얻은 기술을 Unity 프로젝트에 직접 적용해 보면서 자신의 것으로 흡수하시기 바랍니다.  
+> 겪어본 사람과 암기만 한 사람은 대답에서 그 차이가 드러납니다.
 
 ## 기술면접 대비 예상 질문
 
@@ -337,12 +352,12 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * ["C#에서 확장 메서드를 만드는 방법을 설명해 보세요."](#this)
   * ["C#에서 `delegate`와 `event`의 차이점이 무엇인가요?"](#delegate--event)
   * ["C#에서 클로저의 단점은 무엇일까요?"](#lambda-anonymous-method--closure)
+  * ["Unity 메인 스레드가 아닌 스레드에서 UI를 변경하려면 어떻게 해야 하나요?"](#coroutine-vs-비동기-프로그래밍-vs-unitask-vs-awaitable)
   * [**"Unity의 fake null에 대해 설명해 주세요."**](#c과-unity의-null)
   * ["C#의 `List`와 `Dictionary`는 내부적으로 어떻게 구현되어 있나요?"](#list--dictionary)
   * ["C#의 LINQ에 대해 설명해 보세요."](#c-linq)
   * ["C#의 Reflection에 대해 설명해 보세요."](#c-reflection)
-  * ["Unity 메인 스레드가 아닌 스레드에서 UI를 변경하려면 어떻게 해야 하나요?"](#coroutine-vs-비동기-프로그래밍-vs-unitask-vs-awaitable)
-  * ["Unity에서 에셋을 동적으로 로드하는 방법들을 설명하고 각각의 장단점을 이야기해 보세요."](#unity-addressable)
+  * ["어드레서블을 사용해 본 경험을 말씀해 주세요."](#unity-addressable)
   * ["Unity 프로파일러를 사용해 본 경험에 대해 이야기해 주세요."](#unity-프로파일러)
   * [**"Unity로 개발하면서 언제 최적화를 해야 한다고 생각하나요?"**](#unity-성능-최적화)
   * ["최근에 나온 Unity 6의 특징 중 하나를 소개해 보세요."](#unity-6)
@@ -360,13 +375,13 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * ["객체지향 프로그래밍의 5원칙에 대해 설명해 보세요."](#5원칙-solid-원칙)
   * ["C#에서 인터페이스와 추상 클래스와 가상 클래스의 차이를 설명해 보세요."](#interface-vs-abstract-class-vs-virtual-class)
   * ["C#에서 `virtual` 클래스의 메서드를 자식 클래스에서 `override`로 구현할 때와 `new`로 구현할 때 어떻게 다른지 설명해 보세요."](#c-다형성)
-  * ["C#에서 자식 클래스가 `virtual`로 선언된 부모 클래스의 메서드를 `override`할 때, 이것이 메모리에서 어떻게 관리되는지 설명해 보세요."](#c-vtable)
+  * ["C#에서 자식 클래스가 `virtual`로 선언된 부모 클래스의 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"](#c-vtable)
 
 * 디자인 패턴
   * [**"디자인 패턴을 적용해 본 경험에 대해 이야기해 주세요."**](#디자인-패턴)
   * ["Singleton 패턴에 대해 설명해 보세요."](#singleton-패턴)
   * ["Null object 패턴에 대해 설명해 보세요."](#null-object-패턴)
-  * ["Dependency injection 패턴에 대해 설명해 보세요."](#dependency-injection-패턴)
+  * ["Dependency injection에 대해 설명해 보세요."](#dependency-injection)
   * ["Strategy 패턴에 대해 설명해 보세요."](#strategy-패턴)
   * ["Proxy 패턴에 대해 설명해 보세요."](#proxy-패턴)
   * ["Facade 패턴에 대해 설명해 보세요."](#facade-패턴)
@@ -389,10 +404,9 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * ["데이터베이스 정규화에 대해 설명해 보세요."](#정규형)
 
 * 통신
+  * ["네트워크 7계층 중 다섯 번째 계층에 대해 설명해 보세요."](#osi-7계층)
   * ["멀티플레이어 게임에서 전용 서버 방식과 호스팅 방식의 차이를 설명해 보세요."](#멀티플레이어-게임의-구조)
-  * ["RPC가 언제 사용되는지 설명해 보세요."](#원격-프로시저-호출-rpc)
-  * "플레이어가 재화를 획득하는 로직을 클라이언트에 둘 때와 서버에 둘 때 각각 어떤 장단점이 있나요?" *(직접 답해보세요.)*
-  * "실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 길면 안 되겠죠? 클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요." *(직접 답해보세요.)*
+  * ["RPC 요청을 보냈는데 응답을 받기 전에 연결이 끊긴 경우, 요청이 서버에서 단 한 번만 처리됨을 보장하려면 어떻게 해야 하나요?"](#원격-프로시저-호출-rpc)
 
 ## Unity & C# 스크립팅
 
@@ -485,6 +499,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * *".NET과 Unity의 GC가 어떻게 다른지 설명할 수 있나요?"*
 * *"`GC.Collect()` 함수를 명시적으로 호출해본 적이 있나요?"*
+* *"동적 할당을 줄여야 하는 이유는 무엇인가요?"*
 
 #### GC를 쓸 때의 장점
 
@@ -649,7 +664,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 * `struct`(구조체) 인스턴스
   * 값 타입이다.
   * **스택에 저장된다.**
-  * 메서드를 가질 수 없다.
+  * **필드와 메서드를 가질 수 있다.** *(주의!)*
   * 할당하거나 인수로 넘기거나 반환할 때 복사된다.
 * `class`(클래스) 인스턴스
   * 참조 타입이다.
@@ -774,6 +789,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 예: `text = $"(x, y) = ({pos.x}, {pos.y})"`
 
 #### 문자열 할당을 줄이는 방법
+
 * 빈 문자열은 `""` 대신 `string.Empty`를 사용한다.
 * `string.Split()`의 사용을 줄인다.
 * `+`로 문자열을 연결하지 않고 `StringBuilder` 또는 문자열 보간을 이용한다.
@@ -781,6 +797,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * `System.Text.StringBuilder`보다 할당을 줄인 서드 파티 라이브러리도 있다. (예: Cysharp의 [`ZString`](https://github.com/Cysharp/ZString))
 
 #### 빈 문자열 확인
+
 * 속도가 가장 빠른 방법은 `string.Length == 0`을 확인하는 것이다.
   * 다만 이는 string이 `null`이 아님이 확실한 상황에서만 사용할 수 있다.
   * 평소에 빈 문자열을 반환할 때 `null`이나 `""`보다는 `string.Empty`를 반환하는 것이 좋다.
@@ -926,6 +943,60 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * https://stackoverflow.com/questions/37977757/does-closure-involves-boxing
 * `static` 키워드를 붙여 [정적 익명 함수](https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/proposals/csharp-9.0/static-anonymous-functions)를 만들면 지역 변수를 실수로 포착하여 클로저가 되는 현상을 방지할 수 있다.
   * *면접에서 이런 것까지 묻지는 않을 것입니다.*
+
+### Coroutine vs. 비동기 프로그래밍 vs. UniTask vs. Awaitable
+
+> https://gamedevbeginner.com/async-in-unity/  
+> https://tistory.jeon.sh/59
+
+* 코루틴 (Coroutine)
+  * `IEnumerator` 타입으로 정의한다.
+    * 값을 반환할 수 없다.
+  * 여러 프레임에 걸쳐 실행해야 하는 로직을 짤 때 유용하다.
+    * 실행권을 놓았다가 나중에 이어서 실행하는 조건(`yield`)을 다양하게 정할 수 있다.
+    * `Update()` 문보다 편리하게 가독성 높은 코드를 작성할 수 있다.
+  * Unity 메인 스레드에서 돌아간다.
+  * Non-blocking으로 병렬적으로 돌아가는 것처럼 보이지만 실제로는 순차적으로 돌아간다.
+    * 함수를 쪼개서 중간중간에 다른 함수가 실행될 수 있도록 한 것이다.
+    * 매우 오래 걸리는 작업을 코루틴에 넣으면 그만큼 게임이 끊기고 멈춘다.
+  * 코루틴을 실행하는 컴포넌트가 `Destroy()`되면 실행이 멈춘다.
+  * `yield return` 문에 쓰이는 `new`도 할당을 유발한다.
+    * `WaitForSeconds()` 등을 캐싱하여 사용하는 것이 좋다.
+
+* 비동기 함수 (`async` / `await`)
+  * `async void` 또는 `async Task` 또는 `async Task<TResult>` 타입으로 정의한다.
+    * `async Task<TResult>`를 사용하면 `TResult` 타입의 반환값을 가진다.
+    * `async void`와 `async Task`의 차이: https://stackoverflow.com/questions/12144077/async-await-when-to-return-a-task-vs-void
+  * Unity와 무관한 긴 작업을 처리할 때 유용하다.
+    * 예: 서버 API 호출, 큰 데이터 로드 등
+  * 메인 스레드가 아닌 스레드에서 실행된다. 멀티스레딩이다.
+    * 코루틴과 달리 실제로 병렬적이다. 따라서 Unity 로직의 실행을 가로막지 않는다.
+  * Unity의 `MonoBehaviour`에서 파생된 native API는 멀티스레딩을 지원하지 않으며, 메인 스레드에서만 호출할 수 있다.
+    * 예를 들어 UI를 변경해야 하는 경우 로직을 메인 스레드로 가져와 실행해야 한다.
+  * 함수를 실행한 오브젝트가 파괴되어도 취소 토큰을 사용하지 않는 한 끝까지 실행된다.
+  * Thread-safe하게 코드를 작성해야 한다.
+    * 서로 다른 스레드에서 공유 변수를 사용할 때에는 [`lock`을 잘 걸어야 한다.](#deadlock-교착-상태)
+  * WebGL에서 지원되지 않는 기능이다.
+
+* `UniTask`
+  * https://github.com/Cysharp/UniTask
+  * Cysharp에서 제공하는 서드 파티 라이브러리
+  * Unity에서 비동기 프로그래밍을 구현할 때 유용하다.
+  * Unity 메인 스레드에서 돌아간다.
+  * `Task`를 사용할 때보다 할당을 줄일 수 있다.
+    * 내부가 `struct`로 구현되어 있다.
+  * 한 `UniTask` 객체를 두 번 이상 `await`(재사용)할 수 없다.
+  * WebGL에서도 호환된다.
+
+* `Awaitable`
+  * https://docs.unity3d.com/kr/2023.2/Manual/AwaitSupport.html
+  * Unity에서 `async`, `await`을 사용할 수 있게 해준다.
+  * 백그라운드 스레드에서 실행하다가도 원할 때 메인 스레드로 돌아와 실행을 이어할 수 있다. 반대로도 가능하다.
+    * 실행하는 스레드를 너무 자주 전환하는 것은 안 좋다.
+  * `UniTask`와 달리 클래스로 구현되어 있어 할당이 발생한다.
+  * 풀 시스템으로 관리되므로, 한 `Awaitable` 객체를 두 번 이상 `await`(재사용)할 수 없다.
+  * Unity 2023.1 이후의 최신 버전에서만 사용할 수 있다.
+    * [Unity 6](#unity-6)로 오면서 기능이 더 추가되었지만 여전히 실전에서 사용하기에는 부족하다는 평가를 받는다.
 
 ### C#과 Unity의 `null`
 
@@ -1133,70 +1204,22 @@ var query2 = words.
 * 메서드 이름을 인자로 넣어 해당 메서드를 호출하는 함수는 내부적으로 Reflection을 사용하므로 피해야 한다.
   * 예: `StartCoroutine("FadeOut");` 대신 `StartCoroutine(FadeOut());`을 사용해야 한다.
 
-### Coroutine vs. 비동기 프로그래밍 vs. UniTask vs. Awaitable
-
-> https://gamedevbeginner.com/async-in-unity/  
-> https://tistory.jeon.sh/59
-
-* 코루틴 (Coroutine)
-  * `IEnumerator` 타입으로 정의한다.
-    * 값을 반환할 수 없다.
-  * 여러 프레임에 걸쳐 실행해야 하는 로직을 짤 때 유용하다.
-    * 실행권을 놓았다가 나중에 이어서 실행하는 조건(`yield`)을 다양하게 정할 수 있다.
-    * `Update()` 문보다 편리하게 가독성 높은 코드를 작성할 수 있다.
-  * Unity 메인 스레드에서 돌아간다.
-  * Non-blocking으로 병렬적으로 돌아가는 것처럼 보이지만 실제로는 순차적으로 돌아간다.
-    * 함수를 쪼개서 중간중간에 다른 함수가 실행될 수 있도록 한 것이다.
-    * 매우 오래 걸리는 작업을 코루틴에 넣으면 그만큼 게임이 끊기고 멈춘다.
-  * 코루틴을 실행하는 컴포넌트가 `Destroy()`되면 실행이 멈춘다.
-  * `yield return` 문에 쓰이는 `new`도 할당을 유발한다.
-
-* 비동기 함수 (`async` / `await`)
-  * `async void` 또는 `async Task` 또는 `async Task<TResult>` 타입으로 정의한다.
-    * `async Task<TResult>`를 사용하면 `TResult` 타입의 반환값을 가진다.
-    * `async void`와 `async Task`의 차이: https://stackoverflow.com/questions/12144077/async-await-when-to-return-a-task-vs-void
-  * Unity와 무관한 긴 작업을 처리할 때 유용하다.
-    * 예: 서버 API 호출, 큰 데이터 로드 등
-  * 메인 스레드가 아닌 스레드에서 실행된다. 멀티스레딩이다.
-    * 코루틴과 달리 실제로 병렬적이다. 따라서 Unity 로직의 실행을 가로막지 않는다.
-  * Unity의 `MonoBehaviour`에서 파생된 native API는 멀티스레딩을 지원하지 않으며, 메인 스레드에서만 호출할 수 있다.
-    * 예를 들어 UI를 변경해야 하는 경우 로직을 메인 스레드로 가져와 실행해야 한다.
-  * 함수를 실행한 오브젝트가 파괴되어도 취소 토큰을 사용하지 않는 한 끝까지 실행된다.
-  * Thread-safe하게 코드를 작성해야 한다.
-    * 서로 다른 스레드에서 공유 변수를 사용할 때에는 [`lock`을 잘 걸어야 한다.](#deadlock-교착-상태)
-  * WebGL에서 지원되지 않는 기능이다.
-
-* `UniTask`
-  * https://github.com/Cysharp/UniTask
-  * Cysharp에서 제공하는 서드 파티 라이브러리
-  * Unity에서 비동기 프로그래밍을 구현할 때 유용하다.
-  * Unity 메인 스레드에서 돌아간다.
-  * `Task`를 사용할 때보다 할당을 줄일 수 있다.
-    * 내부가 `struct`로 구현되어 있다.
-  * 한 `UniTask` 객체를 두 번 이상 `await`(재사용)할 수 없다.
-  * WebGL에서도 호환된다.
-
-* `Awaitable`
-  * https://docs.unity3d.com/kr/2023.2/Manual/AwaitSupport.html
-  * Unity에서 `async`, `await`을 사용할 수 있게 해준다.
-  * 백그라운드 스레드에서 실행하다가도 원할 때 메인 스레드로 돌아와 실행을 이어할 수 있다. 반대로도 가능하다.
-    * 실행하는 스레드를 너무 자주 전환하는 것은 안 좋다.
-  * `UniTask`와 달리 클래스로 구현되어 있어 할당이 발생한다.
-  * 풀 시스템으로 관리되므로, 한 `Awaitable` 객체를 두 번 이상 `await`(재사용)할 수 없다.
-  * Unity 2023.1 이후의 최신 버전에서만 사용할 수 있다.
-    * [Unity 6](#unity-6)로 오면서 기능이 더 추가되었지만 여전히 실전에서 사용하기에는 부족하다는 평가를 받는다.
-
 ### Unity Addressable
 
 > https://docs.unity3d.com/Packages/com.unity.addressables@2.3/manual/index.html  
+> https://unity.com/kr/blog/technology/tales-from-the-optimization-trenches-saving-memory-with-addressables  
 > https://medium.com/pinkfong/unity-addressable-asset-%EB%A5%BC-%EC%99%9C-3017f3fa2edc
+
+* *"과거에 진행한 프로젝트에서 어드레서블을 사용해 본 경험을 말씀해 주세요."*
+* *"원격으로 리소스 콘텐츠를 배포할 때의 장점은 무엇인가요?"*
 
 * Unity에서 에셋을 런타임에 동적으로 로드하는 방법은 세 가지가 있다.
   * `Resources` 폴더
   * 에셋 번들 (Asset bundle)
   * 어드레서블 (Addressable)
 * 그 중 어드레서블은 최근에 나온 에셋 관리 방법이다.
-  * *자세한 내용은 위의 링크를 참고하세요.*
+  * [어드레서블을 통한 메모리 최적화](https://unity.com/kr/blog/technology/tales-from-the-optimization-trenches-saving-memory-with-addressables)를
+    읽으면 감을 잡는 데에 도움이 많이 된다.
 * 에셋을 원격으로 배포하고 동적으로 로드해야 하는 이유?
   * 빌드 과정 중 에셋 패킹 과정이 있다.
   * 빌트인 에셋: 모든 에셋을 빌드 파일에 담아서 배포
@@ -1219,16 +1242,29 @@ var query2 = words.
 
 ### Unity 프로파일러
 
-> https://docs.unity3d.com/kr/2021.3/Manual/Profiler.html
+> https://docs.unity3d.com/kr/2021.3/Manual/Profiler.html  
+> https://docs.unity3d.com/kr/2021.3/Manual/OptimizingGraphicsPerformance.html  
 > https://learn.unity.com/tutorial/diagnosing-performance-problems-2019-3?language=en&courseId=5c87de35edbc2a091bdae346#648abf6eedbc2a6ad72aff24
 
 * *"과거에 진행했던 프로젝트에서 프로파일러를 써본 경험을 말씀해 주세요."*
+* *"모바일 기기의 발열량을 낮춰야 하는 이유는 무엇인가요?"*
 
 * CPU, GPU, Garbage Collection Profiling 등이 가능하다.
-  * 대부분은 Rendering 관련 이슈일 것이다. 이 경우 CPU가 병목인지 GPU가 병목인지 찾아야 한다.
-    * `Gfx.WaitForPresent` 함수에서 병목이 생긴다면 이것은 CPU가 GPU 처리를 기다리고 있다는 뜻이다. 이때는 GPU가 병목이다.
-    * CPU가 병목이라면 [여기](https://docs.unity3d.com/kr/2021.3/Manual/graphics-performance-profiling.html)를 살펴본다.
-  * `GC.Collect()` 함수가 호출된 시점에서 병목이 생긴다면 [여기](https://docs.unity3d.com/kr/current/Manual/performance-garbage-collection-best-practices.html)를 살펴본다.
+* 대부분은 Rendering 관련 이슈일 것이다. 이 경우 CPU가 병목인지 GPU가 병목인지 찾아야 한다.
+  * `Gfx.WaitForPresent` 함수에서 병목이 생긴다면 이것은 CPU가 GPU 처리를 기다리고 있다는 뜻이다. 이때는 GPU가 병목이다.
+  * [여기](https://docs.unity3d.com/kr/2021.3/Manual/OptimizingGraphicsPerformance.html)를 보면서 문제를 찾고 해결을 시도한다.
+* CPU가 병목인 경우 다음을 시도한다.
+  * GPU에 보낼 오브젝트 수 줄이기
+  * 3D 모델의 Transform 계층구조 최적화
+  * 동적 조명과 실시간 그림자 피하기
+  * 동일한 매터리얼 및 아틀라스 사용
+  * Canvas가 변하는 빈도에 따라 UI 분리
+* GPU가 병목인 경우 다음이 문제일 수 있다.
+  * Fill Rate
+  * Overdraw
+  * 메모리 대역폭
+  * Vertex Processing
+* `GC.Collect()` 함수가 호출된 시점에서 병목이 생긴다면 [여기](https://docs.unity3d.com/kr/current/Manual/performance-garbage-collection-best-practices.html)를 살펴본다.
   * Physics가 병목인 경우 [여기](https://docs.unity3d.com/kr/current/Manual/iphone-Optimizing-Physics.html)를 살펴본다.
   * 사용자 스크립트가 병목인 경우 [여기](https://docs.unity3d.com/kr/2021.3/Manual/BestPracticeUnderstandingPerformanceInUnity.html)를 살펴본다.
 * 성능 문제를 찾아 해결하고 싶다면 [여기](https://learn.unity.com/tutorial/fixing-performance-problems-2019-3?uv=2022.2&courseId=5c87de35edbc2a091bdae346#)를 읽어본다.
@@ -1359,7 +1395,7 @@ var query2 = words.
 
 > https://docs.unity3d.com/kr/2021.3/Manual/Textures.html
 
-* *"텍스처 압축 포맷은 어떤 것을 사용하시나요?"*
+* *"과거에 진행한 프로젝트에서 텍스처 압축 방식은 어떤 것을 사용했나요?"*
 
 * 3D 오브젝트의 메시 표면에 걸쳐 적용되는 비트맵 이미지
 * 텍스처는 매터리얼을 사용해 오브젝트에 적용할 수 있고, 매터리얼은 셰이더를 사용해 메시 표면의 텍스처를 렌더링한다.
@@ -1385,7 +1421,7 @@ var query2 = words.
 * 텍스처는 2D 스프라이트, 메시, 파티클 시스템, GUI, 지형 높이 맵(Terrain Heightmap)에 사용된다.
 
 <details>
-<summary>텍스처 타입 및 임포트에 대한 자세한 내용 <i>(클릭하면 펼쳐집니다.)</i></summary>
+<summary><span style="font-size:120%">텍스처 타입 및 임포트에 대한 자세한 내용</span> <i>(클릭하면 펼쳐집니다.)</i></summary>
 
 * 텍스처 타입
   * Default
@@ -1469,7 +1505,7 @@ var query2 = words.
    * 추상적인 것에 구체적인 것이 의존해야 한다. 구체적인 것에 추상적인 것이 의존하면 안 된다.
    * 부모 클래스에 자식 클래스가 의존해야 한다. 반대가 되면 안 된다.
    * 추상화, 상속과 관련
-   * [종속성 주입](#dependency-injection-패턴)을 적용하면 이 원칙을 지키는 데에 도움이 된다.
+   * [종속성 주입](#dependency-injection)을 적용하면 이 원칙을 지키는 데에 도움이 된다.
 * 소프트웨어의 유지보수성, 재사용성, 확장성을 높이기 위해 이 원칙들을 지키면 좋다.
 
 ### interface vs. abstract class vs. virtual class
@@ -1477,7 +1513,7 @@ var query2 = words.
 * *"인터페이스를 언제 사용하면 좋은가요?"*
 
 * *인터페이스와 추상 클래스와 가상 클래스의 차이를 직접 찾아보고 답해보시기 바랍니다.*
-  * *[종속성 주입](#dependency-injection-패턴)과 함께 공부하면 좋습니다.*
+  * *[종속성 주입](#dependency-injection)과 함께 공부하면 좋습니다.*
 
 ### C# 다형성
 
@@ -1499,7 +1535,7 @@ var query2 = words.
 > https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EC%86%8C%EB%93%9C_%ED%85%8C%EC%9D%B4%EB%B8%94  
 > https://www.csharpstudy.com/DevNote/Article/28
 
-* *"virtual class와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 오버라이드했을 때, 이 둘이 메모리에서 어떤 자료구조로 관리되나요?"*
+* *"virtual class와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"*
 
 * Virtual table(VTable)은 가상 메서드(virtual 또는 abstract)를 갖는 클래스를 상속하여 해당 메서드를 override할 때 생긴다.
   * 메서드 포인터를 저장하는 배열이다.
@@ -1518,6 +1554,7 @@ var query2 = words.
 
 * *"디자인 패턴을 적용해본 적이 있나요?"*
 * *"디자인 패턴을 따로 외우고 익혀야 한다고 생각하나요?"*
+* *클래스 간 종속성을 줄이는 것이 왜 중요한가요?*
 
 ### Singleton 패턴
 
@@ -1535,23 +1572,24 @@ var query2 = words.
 * Dummy 오브젝트를 받으면 아무 연산도 수행하지 않도록 구현한다.
 * `null` 체크를 안 해도 된다.
 
-### Dependency Injection 패턴
+### Dependency Injection
 
 > https://learn.microsoft.com/ko-kr/dotnet/core/extensions/dependency-injection  
 > https://medium.com/@avinash.dhumal/understanding-dependency-injection-a-practical-guide-with-c-examples-aee44eacee32  
 > https://learn.microsoft.com/ko-kr/dotnet/architecture/modern-web-apps-azure/architectural-principles#dependency-inversion
 
-* *신입 입사 면접에서 물어볼 가능성은 낮지만, 굉장히 자주 사용되므로 공부할 수 있을 때 공부하고 익히는 것을 추천하는 패턴입니다.*
+* *신입 입사 면접에서 물어볼 가능성은 낮지만, 실무에서 굉장히 자주 사용되므로 공부할 수 있을 때 공부하고 익히는 것을 추천합니다.*
+* *개인에 따라 dependency injection을 디자인 패턴으로 취급하지 않기도 합니다.*
 
-* 클래스 A가 다른 클래스 B의 인스턴스를 필요로 할 때(종속성이 있을 때), 클래스 A의 코드에 하드코딩하여 B의 인스턴스를 생성하지 않고, A의 생성자의 인자를 통해 외부에서 생성된 B의 인스턴스를 주입받는 패턴이다.
-  * 만약 B의 인스턴스 대신 B와 같은 인터페이스(또는 부모 클래스)를 구현하는 클래스 C의 인스턴스를 A가 필요로 한다면, 종속성 주입 패턴을 통해 A의 코드를 고치지 않고도 A가 B 또는 C의 인스턴스 중 하나를 자유롭게 종속성으로 가지도록 만들 수 있다.
-  * A가 갖는 종속성 B가 다른 종속성(D, E, ...)을 가질 때에도 종속성 주입 패턴을 사용하면 종속성을 차례로 해결하여 완전한 종속성 그래프를 A에게 반환한다.
+* 클래스 A가 다른 클래스 B의 인스턴스를 필요로 할 때(종속성이 있을 때), 클래스 A의 코드에 하드코딩하여 B의 인스턴스를 생성하지 않고, A의 생성자의 인자를 통해 외부에서 생성된 B의 인스턴스를 주입받도록 하는 설계이다.
+  * 만약 B의 인스턴스 대신 B와 같은 인터페이스(또는 부모 클래스)를 구현하는 클래스 C의 인스턴스를 A가 필요로 한다면, 종속성 주입을 통해 A의 코드를 고치지 않고도 A가 B 또는 C의 인스턴스 중 하나를 자유롭게 종속성으로 가지도록 만들 수 있다.
+  * A가 갖는 종속성 B가 다른 종속성(D, E, ...)을 가질 때에도 종속성 주입을 사용하면 종속성을 차례로 해결하여 완전한 종속성 그래프를 A에게 반환한다.
 * [객체 지향 프로그래밍의 5원칙](#5원칙-solid-원칙) 중 '의존성 역전 원칙'을 해결하는 데에 도움을 준다.
 * 제어 반전(inversion of control)을 일으킨다.
   * 일반적인 제어의 흐름은 프로그래머가 외부 라이브러리 메서드를 호출하는 것이지만, 제어 반전이 일어나면 외부 라이브러리에서 프로그래머가 주입하는 인스턴스를 참조한다.
 
 <details>
-<summary><b>더 많은 디자인 패턴 알아보기</b> <i>(클릭하면 펼쳐집니다.)</i></summary>
+<summary><span style="font-size:120%"><b>더 많은 디자인 패턴 알아보기</b></span> <i>(클릭하면 펼쳐집니다.)</i></summary>
 
 ### Strategy 패턴
 
@@ -1747,11 +1785,12 @@ var query2 = words.
 * *"32비트 운영체제와 64비트 운영체제의 차이가 무엇인가요?"*
 
 * 둘의 차이는 사용할 수 있는 RAM의 크기이다.
-  * 32비트는 최대 4GB(=$2^{32}$ bytes)의 메모리만 인식한다.  
+  * 32비트는 최대 4GB(= $2^{32}$ bytes)의 메모리만 인식한다.  
     Windows에서는 `x86`으로 불린다.
-  * 64비트는 최대 16EB(=$2^{64}$ bytes)의 메모리를 인식한다.
+  * 64비트는 최대 16EB(= $2^{64}$ bytes)의 메모리를 인식한다.
     Windows에서는 `x64`로 불린다.
 * 64비트 운영체제에서 64비트 프로그램을 돌리는 것이 32비트 프로그램을 돌리는 것보다 당연히 빠르다.
+* 갤럭시 S24 등의 최신 모바일 기기에서는 32비트 `.apk`를 실행할 수 없다.
 
 ## 데이터베이스
 
@@ -1770,7 +1809,7 @@ var query2 = words.
 
 * *DB 설계에 도움이 되는 내용입니다.*
 
-## 통신
+## 네트워크 & 통신
 
 ### OSI 7계층
 
@@ -1783,6 +1822,7 @@ var query2 = words.
 > https://docs-multiplayer.unity3d.com/netcode/current/terms-concepts/network-topologies/  
 > https://www.photonengine.com/ko-kr/fusion
 
+* *"게임 서버, 멀티플레이어 게임 또는 웹·앱 백엔드를 구현해 본 경험이 있나요?"*
 * *각 토폴로지의 장점과 단점을 공부하고 어떤 상황에 어떤 토폴로지가 적절한지 말할 수 있으면 좋습니다.*
 
 * 네트워크 토폴로지
@@ -1792,8 +1832,11 @@ var query2 = words.
 
 ### 원격 프로시저 호출 (RPC)
 
-* *"플레이어가 재화를 획득하는 로직을 클라이언트에 둘 때와 서버에 둘 때 각각 어떤 장단점이 있나요?"*
-* *"실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 길면 안 되겠죠? 클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요."*
+* *"플레이어가 재화를 획득하는 로직을 서버에 두지 않고 클라이언트에 두면 어떤 장점과 단점이 있나요?"*
+* *"클라이언트가 요청을 보내지 않고도 서버에서 일방적으로 메시지를 클라이언트에게 보내는 경우가 있다면, 클라이언트에서 이 메시지를 받기 위해 어떻게 구현해야 할까요?"*
+* *"RPC 요청을 보냈는데 응답을 받는 과정에서 연결이 끊겨 서버가 이를 처리했는지 클라이언트가 알 수 없는 경우가 있습니다.
+  이러한 상황에서 요청이 서버에서 단 한 번만 처리됨을 보장하려면 어떻게 해야 하나요?"*
+* *"실시간 온라인 게임에서는 서버에 요청을 보내고 응답을 받을 때까지의 지연 시간이 짧을수록 좋습니다. 클라이언트에서 반응성을 높이기 위한 방법을 제안해 보세요."*
 * *RPC가 무엇의 약자인지, 어떤 상황에서 필요한지 등을 공부하면 좋습니다.*
 
 * RPC와 REST의 차이
