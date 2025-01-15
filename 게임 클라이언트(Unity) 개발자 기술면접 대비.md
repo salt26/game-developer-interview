@@ -526,12 +526,13 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * mark 페이즈가 끝나면 관리되는 힙 영역에 할당된 모든 참조 타입 변수를 탐색하면서 mark되지 않은 것들을 sweep한다.
   * sweep할 때 힙 압축을 수행한다. 만약 garbage가 있으면 그 위(그보다 높은 주소)에 저장된, mark된 메모리를 garbage가 있던 공간에 옮길 준비를 한다. 변경될 주소 포인터를 계산하고, 메모리를 복사하여 옮기는 작업을 수행한다.
   * 두 객체가 서로를 상호 참조하고 있어도, root로부터 시작하는 외부 개체와 연결되어 있지 않다면 Mark and Sweep 알고리즘에서 mark되지 않으므로 상호 참조가 문제가 되지 않는다.
-* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다.
+* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다. (Stop-the-World)
 
 #### Unity의 GC
 
 * [Boehm–Demers–Weiser garbage collector 알고리즘](https://www.hboehm.info/gc/gcdescr.html)을 사용한다.
   * Mark and Sweep의 변형이다.
+  * 점진적 GC 방식을 취한다. 게임이 중간에 멈추는 일이 없도록 하기 위해 택한 방식이다.
 * **.NET의 GC와 무엇이 다른가?**
   * 세대 구분이 없다.
   * 메모리 압축이 없다.
@@ -541,6 +542,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 싱글 스레드 환경에서 사용하기 위해
 * 유의할 점
   * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
+* **Unity의 GC.Collect()**
+  * Unity에서는 일반적으로 GC가 자동으로 돌아가지만, 필요에 의해 GC.Collect()를 직접 호출하여 메모리 관리를 할 수 있다. 
+  * 다만, GC.Collect()는 참조가 되어있지 않은 개체들, 즉 이미 가비지가 된 개체들만을 치울 뿐이다.
+  * 따라서 처리하고 싶은 가비지 메모리가 있다면, 그저 참조(연결성)을 잘 끊어주기만 해도 된다. GC.Collect()의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
 
 #### 동적 할당을 줄여야 하는 이유
 
