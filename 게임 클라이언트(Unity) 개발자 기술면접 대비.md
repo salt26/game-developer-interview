@@ -1,11 +1,12 @@
 # 게임 클라이언트(Unity) 개발자 기술면접 대비
 
 최초 작성일: 2024년 7월  
-최종 편집일: 2024년 12월
+최종 편집일: 2025년 2월
 
 ## 작성 기여자
 
 * [안단태](https://github.com/salt26/)
+* [이주연](https://github.com/Yongmalyang/)
 
 ## 저작권
 
@@ -532,7 +533,15 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * [Boehm–Demers–Weiser garbage collector 알고리즘](https://www.hboehm.info/gc/gcdescr.html)을 사용한다.
   * Mark and Sweep의 변형이다.
-  * 점진적 GC 방식을 취한다. 게임이 중간에 멈추는 일이 없도록 하기 위해 택한 방식이다.
+  * C/C++에서도 활용할 수 있는 GC이다.
+  * BDW의 주요 특징들:
+  * 1. BDW는 보수적이다. C/C++와 같은 포인터를 활용하는 언어에서는 정확한 메모리 추적이 어렵기 때문이다.
+  * 2. BDW는 점진적(Incremental) GC 방식을 취한다. 게임이 중간에 멈추는 일이 없도록 하기 위해 택한 방식이다.
+  * 3. BDW는 메모리 단편화를 줄이기 위해 메모리 풀(pool) 기법을 사용한다. 쉽게 말해 메모리를 미리 일정 크기의 블록으로 할당해두고, 블록 단위로 배정한다는 것이다.
+* Mark and Sweep VS. BDW
+  * 명시적 호출이 필요 VS. 보수적임
+  * Stop the world VS. 점진적임
+  * Java/Python VS. C/C++
 * **.NET의 GC와 무엇이 다른가?**
   * 세대 구분이 없다.
   * 메모리 압축이 없다.
@@ -542,10 +551,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 싱글 스레드 환경에서 사용하기 위해
 * 유의할 점
   * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
-* **Unity의 GC.Collect()**
+* **Unity의 GC.Collect() 함수**
   * Unity에서는 일반적으로 GC가 자동으로 돌아가지만, 필요에 의해 GC.Collect()를 직접 호출하여 메모리 관리를 할 수 있다. 
-  * 다만, GC.Collect()는 참조가 되어있지 않은 개체들, 즉 이미 가비지가 된 개체들만을 치울 뿐이다.
-  * 따라서 처리하고 싶은 가비지 메모리가 있다면, 그저 참조(연결성)을 잘 끊어주기만 해도 된다. GC.Collect()의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
+  * 다만, GC.Collect()는 참조가 되어있지 않은 개체들, 즉 이미 garbage가 된 개체들만을 치울 뿐이다.
+  * 따라서 처리하고 싶은 garbage가 있다면, 그저 참조(연결성)을 잘 끊어주기만 해도 된다. GC.Collect()의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
 
 #### 동적 할당을 줄여야 하는 이유
 
