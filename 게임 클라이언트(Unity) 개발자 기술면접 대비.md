@@ -1,11 +1,12 @@
 # 게임 클라이언트(Unity) 개발자 기술면접 대비
 
 최초 작성일: 2024년 7월  
-최종 편집일: 2024년 12월
+최종 편집일: 2025년 2월
 
 ## 작성 기여자
 
 * [안단태](https://github.com/salt26/)
+* [이주연](https://github.com/Yongmalyang/)
 
 ## 저작권
 
@@ -526,12 +527,20 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * mark 페이즈가 끝나면 관리되는 힙 영역에 할당된 모든 참조 타입 변수를 탐색하면서 mark되지 않은 것들을 sweep한다.
   * sweep할 때 힙 압축을 수행한다. 만약 garbage가 있으면 그 위(그보다 높은 주소)에 저장된, mark된 메모리를 garbage가 있던 공간에 옮길 준비를 한다. 변경될 주소 포인터를 계산하고, 메모리를 복사하여 옮기는 작업을 수행한다.
   * 두 객체가 서로를 상호 참조하고 있어도, root로부터 시작하는 외부 개체와 연결되어 있지 않다면 Mark and Sweep 알고리즘에서 mark되지 않으므로 상호 참조가 문제가 되지 않는다.
-* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다.
+* GC가 돌아가는 중에는 모든 다른 스레드가 suspended 상태가 된다. (Stop-the-World)
 
 #### Unity의 GC
 
 * [Boehm–Demers–Weiser garbage collector 알고리즘](https://www.hboehm.info/gc/gcdescr.html)을 사용한다.
   * Mark and Sweep의 변형이다.
+  * C/C++에서도 활용할 수 있는 GC이다.
+  * BDW의 주요 특징들:
+    * BDW는 보수적이다. 이는 사용 중일 가능성이 조금이라도 있는 객체는 치우지 않는다는 뜻이다. C/C++와 같은 포인터를 활용하는 언어에서는 정확한 메모리 추적이 어렵기 때문이다.
+    * BDW는 점진적(Incremental) GC 방식을 취한다. 게임이 중간에 멈추는 일이 없도록 하기 위해 택한 방식이다.
+    * BDW는 메모리 단편화를 줄이기 위해 메모리 풀(pool) 기법을 사용한다. 쉽게 말해 메모리를 미리 일정 크기의 블록으로 할당해두고, 블록 단위로 배정한다는 것이다.
+* Mark and Sweep VS. BDW
+  * 확실하게 참조된 데이터들만 남기고 전부 수거 VS. 포인터가 될 가능성이 있다면 전부 남겨둠, 보수적임
+  * Stop-the-world VS. 점진적임
 * **.NET의 GC와 무엇이 다른가?**
   * 세대 구분이 없다.
   * 메모리 압축이 없다.
@@ -541,6 +550,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 싱글 스레드 환경에서 사용하기 위해
 * 유의할 점
   * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
+* **Unity의 `GC.Collect()` 함수**
+  * Unity에서는 일반적으로 GC가 자동으로 돌아가지만, 필요에 의해 `GC.Collect()`를 직접 호출하여 메모리 관리를 할 수 있다. 
+  * 다만, `GC.Collect()`는 참조가 되어있지 않은 개체들, 즉 이미 garbage가 된 개체들만 치운다.
+  * 따라서 처리하고 싶은 garbage가 있다면, 그저 참조(연결성)를 잘 끊어주기만 해도 된다. `GC.Collect()`의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
 
 #### 동적 할당을 줄여야 하는 이유
 
