@@ -711,8 +711,9 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
     * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
   * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/reference-types
 * Boxing: 값 타입을 참조 타입으로 변환
+  * Boxing은 동적 할당을 만드므로 비싸다.
 * Unboxing: 참조 타입을 값 타입으로 변환
-* Boxing과 unboxing은 동적 할당을 만드므로 비싸다.
+  * Unboxing은 동적 할당을 발생시키지 않는다.
 * **대표적인 boxing의 예** (피해야 한다.)
   * `object.Equals(object other)` 사용
 
@@ -760,8 +761,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 ### Unity Serialization / Deserialization
 
 * 직렬화
-  * (동적 할당을 통해 저장된) 객체를 바이트 단위로 변환하여 데이터화하는 것
-  * 직렬화를 하면 디스크에 저장하거나 네트워크를 통해 전송하기 용이하며 프로그램의 실행이 멈추어도 데이터를 보존할 수 있다.
+  * (동적 할당을 통해 저장된) 객체의 데이터를 일렬로 묶어서 보관하는 것
+  * 메모리 상에 흩어져 있는 변수들을 모아 연속된 메모리 공간에 올리는 것을 직렬화라고 한다.
+  * 직렬화를 하면 데이터를 연속되게 배치하기 때문에 용량을 계산하거나 통째로 복사하기 유리하다.  
+    또한 디스크에 저장하거나 네트워크를 통해 전송하기도 쉽다.
 * 역직렬화
   * *역직렬화의 정의는 직접 생각해 보시기 바랍니다.*
 * Unity에서 어떤 클래스를 직렬화하려면 어떻게 해야 하는가?
@@ -775,7 +778,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 추가로 `UnityEngine.Object`에서 파생된 오브젝트를 가리키는 참조도 직렬화 가능하다.
   * 다만 `static`, `const`, `readonly`는 직렬화되지 않으며
   * `private` 필드도 `[SerializeField]`가 붙어있지 않다면 직렬화되지 않는다.
-* JSON(JavaScript Object Notation)
+* JSON (JavaScript Object Notation)
   * 데이터를 직렬화한 대표적인 형식이다.
   * 장점
     * 가독성이 높다.
@@ -784,11 +787,13 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 단점
     * 용량이 크다.  
       이는 동적 할당을 많이 만들고 GC가 일하게 한다는 뜻이다.
+      * CSV(comma-separated values)와 비교해 볼 때, JSON에는 중복된 내용이 많이 들어간다.
     * 직렬화 및 역직렬화 시간이 오래 걸린다.  
       문자열 파싱 및 결합이 필요하기 때문이다.
+      * 단, JavaScript에서는 JSON이 고도로 최적화되어 있어 느리지 않다.
     * Random access가 어렵다.  
       특정한 key에 해당하는 값 하나를 가져오려면 전체를 파헤쳐야 한다.
-    * 데이터 조작이 쉬워 보안에 취약하다.
+    * 정보의 의미를 알기 쉬워 조작하기도 쉽다.
   * Unity에서는 [`Newtonsoft.JSON`](https://www.newtonsoft.com/json)과 [`UnityEngine.JsonUtility`](https://docs.unity3d.com/kr/2021.2/Manual/JSONSerialization.html)를 사용할 수 있다.
     * *면접에서 이것까지 묻지는 않겠지만, 나중에 둘의 차이를 알아두면 좋습니다.*
 * `BinaryFormatter`는 [보안 취약점(code injection)이 발견되었으므로](https://discussions.unity.com/t/should-i-avoid-using-binaryformatter-altogether/245535/3) 사용하지 않아야 한다.
@@ -798,11 +803,20 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * Immutable이다.
   * 문자열 값을 수정하면 새로운 값을 만들고 참조를 거기로 잇는다.
-  * 안 쓰는 문자열 값은 GC가 처리한다.
 * 왜 이렇게 구현되어 있는가?
   * 멀티스레딩 환경에서 동기화를 모두 신경쓰는 것보다 readonly로 하는 것이 편하기 때문이다.
-* string을 자주 바꾸면 할당이 많이 일어난다.
-  * 이럴 때에는 `StringBuilder`이나 Cysharp의 [`ZString`](https://github.com/Cysharp/ZString)을 사용하는 것이 낫다.
+* <details>
+  <summary><i><b>퀴즈: string 변수를 만들어도 동적 할당이 발생할까요?</b> (클릭하면 펼쳐집니다.)</i></summary>
+
+  * [String interning (위키백과)](https://en.wikipedia.org/wiki/String_interning)
+  * string 변수를 값과 함께 선언하면 값에 해당하는 문자열이 literal 영역에 이미 있는지 검색하고 없다면 메모리를 **할당**하여 생성한다.  
+    그리고 그 참조 주소를 스택 영역에 쌓은 뒤 선언한 변수에 저장한다.
+  * C#에서는 string interning을 이용하여, 같은 문자열 값은 한 번만 저장되게 한다.  
+    그러나 프로그램이 오래 돌아가면서 안 쓰는 interned string이 쌓이면 GC가 이를 처리한다.
+
+  </details>
+
+* string을 자주 바꾸어야 한다면 `StringBuilder`이나 Cysharp의 [`ZString`](https://github.com/Cysharp/ZString)을 사용하는 것이 낫다.
 * `StringBuilder`
   * 기본적으로 16글자를 담을 수 있는 버퍼를 잡는다.
   * 이 버퍼 안에서는 수정이 이루어져도 GC가 처리하지 않는다.
