@@ -551,10 +551,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 싱글 스레드 환경에서 사용하기 위해
 * 유의할 점
   * 메모리 최적화가 없기 때문에 19버전 이상에서 사용하는 [점진적 GC](https://docs.unity3d.com/kr/current/Manual/performance-incremental-garbage-collection.html)를 사용하거나 오브젝트 풀링 등의 최적화 기법을 사용할 필요가 있다.
-* **Unity의 GC.Collect() 함수**
-  * Unity에서는 일반적으로 GC가 자동으로 돌아가지만, 필요에 의해 GC.Collect()를 직접 호출하여 메모리 관리를 할 수 있다. 
-  * 다만, GC.Collect()는 참조가 되어있지 않은 개체들, 즉 이미 garbage가 된 개체들만을 치울 뿐이다.
-  * 따라서 처리하고 싶은 garbage가 있다면, 그저 참조(연결성)을 잘 끊어주기만 해도 된다. GC.Collect()의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
+* **Unity의 `GC.Collect()` 함수**
+  * Unity에서는 일반적으로 GC가 자동으로 돌아가지만, 필요에 의해 `GC.Collect()`를 직접 호출하여 메모리 관리를 할 수 있다. 
+  * 다만, `GC.Collect()`는 참조가 되어있지 않은 개체들, 즉 이미 garbage가 된 개체들만 치운다.
+  * 따라서 처리하고 싶은 garbage가 있다면, 그저 참조(연결성)를 잘 끊어주기만 해도 된다. `GC.Collect()`의 명시적 호출 없이 알아서 Unity가 잘 수거해간다. 
 
 #### 동적 할당을 줄여야 하는 이유
 
