@@ -427,9 +427,10 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 > https://docs.unity3d.com/kr/2022.3/Manual/CSharpCompiler.html  
 > https://docs.unity3d.com/kr/2021.3/Manual/CSharpCompiler.html  
 > https://docs.unity3d.com/kr/2020.3/Manual/CSharpCompiler.html
+> https://docs.unity3d.com/6000.2/Documentation/Manual/csharp-compiler.html
 
 * 2020.x까지는 C# 8.0 사용
-* 2021.x부터 2023.x까지는 C# 9.0 사용
+* 2021.x부터 6000.x까지는 C# 9.0 사용
   * 일부 기능 미지원
 * 현재 C#의 최신 버전은 12.0
 
