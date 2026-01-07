@@ -1,7 +1,7 @@
 # 게임 클라이언트(Unity) 개발자 기술면접 대비
 
 최초 작성일: 2024년 7월  
-최종 편집일: 2025년 3월
+최종 편집일: 2026년 1월
 
 ## 작성 기여자
 
@@ -384,9 +384,9 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 * 객체지향 프로그래밍
   * ["객체지향 프로그래밍의 네 가지 속성에 대해 설명해 보세요."](#네-가지-속성)
   * ["객체지향 프로그래밍의 5원칙에 대해 설명해 보세요."](#5원칙-solid-원칙)
-  * ["C#에서 인터페이스와 추상 클래스와 가상 클래스의 차이를 설명해 보세요."](#interface-vs-abstract-class-vs-virtual-class)
-  * ["C#에서 `virtual` 클래스의 메서드를 자식 클래스에서 `override`로 구현할 때와 `new`로 구현할 때 어떻게 다른지 설명해 보세요."](#c-다형성)
-  * ["C#에서 자식 클래스가 `virtual`로 선언된 부모 클래스의 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"](#c-vtable)
+  * ["C#에서 인터페이스와 추상 클래스와 일반 클래스의 차이를 설명해 보세요."](#interface-vs-abstract-class)
+  * ["C#에서 `virtual` 메서드를 자식 클래스에서 `override`로 구현할 때와 `new`로 구현할 때 어떻게 다른지 설명해 보세요."](#c-다형성)
+  * ["C#에서 자식 클래스가 부모 클래스의 `virtual` 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"](#c-vtable)
 
 * 디자인 패턴
   * [**"디자인 패턴을 적용해 본 경험에 대해 이야기해 주세요."**](#디자인-패턴)
@@ -1546,17 +1546,26 @@ var query2 = words.
    * [종속성 주입](#dependency-injection)을 적용하면 이 원칙을 지키는 데에 도움이 된다.
 * 소프트웨어의 유지보수성, 재사용성, 확장성을 높이기 위해 이 원칙들을 지키면 좋다.
 
-### interface vs. abstract class vs. virtual class
+### interface vs. abstract class
+
+> https://medium.com/@nwonahr/interfaces-vs-abstract-classes-in-c-whats-the-difference-and-when-to-use-them-9af5ab21b1f9
 
 * *"인터페이스를 언제 사용하면 좋은가요?"*
+* *"C#에서 다중 클래스 상속이 가능한가요?"*
+* *"C#에서 다중 인터페이스 구현이 가능한가요?"*
 
-* *인터페이스와 추상 클래스와 가상 클래스의 차이를 직접 찾아보고 답해보시기 바랍니다.*
+* *인터페이스와 추상 클래스와 일반 클래스의 차이를 직접 찾아보고 답해 보시기 바랍니다.*
   * *[종속성 주입](#dependency-injection)과 함께 공부하면 좋습니다.*
+
+* *"C#에 virtual class라는 개념이 존재하나요?"
+  * [Is therer virtual class in C#? - StackOverflow](https://stackoverflow.com/questions/15104119/is-there-virtual-class-in-c)
+  * '가상 클래스'라는 개념은 존재하지 않는다.
+  * '가상 메서드'와 헷갈리지 않도록 하자.
 
 ### C# 다형성
 
 * 자식 클래스가 부모 클래스의 메서드를 `override`하거나 `new` 키워드로 숨길 수 있다.
-* `A`가 `virtual` 클래스이고 `B`가 `A`를 상속하는 자식 클래스이며 둘이 같은 이름의 메서드를 구현하고 있을 때, 다음의 경우에 동작이 다르다.
+* `A`가 `virtual` 메서드를 가진 부모 클래스이고 `B`가 `A`를 상속하는 자식 클래스이며 둘이 같은 이름의 메서드를 구현하고 있을 때, 다음의 경우에 동작이 다르다.
   * `A a = new A();`
     * `A`의 메서드가 호출된다.
   * `A a = new B();`
@@ -1567,15 +1576,67 @@ var query2 = words.
   * `A a = new B(); B b = (B) a;`
     * `B`의 메서드를 `new`로 정의한 경우, `B`의 메서드가 호출된다.
     * 아무튼 `B`의 메서드가 호출된다.
+
+```csharp
+public class A
+{
+    public virtual void MethodNew()
+    {
+        Debug.Log("A New");
+    }
+    
+    public virtual void MethodOverride()
+    {
+        Debug.Log("A Override");
+    }
+}
+public class B : A
+{
+    public new void MethodNew()
+    {
+        Debug.Log("B New");
+    }
+    
+    public override void MethodOverride()
+    {
+        Debug.Log("B Override");
+    }
+}
+public class Main
+{
+    public void MainMethod()
+    {
+        A a = new A();
+        A ab = new B();
+        B b = new B();
+        B b2 = (B)ab;
+        A a2 = b;
+        // B ba = new A();  // Error!
+        // B ba2 = (B)a;    // Error!
+        
+        a.MethodNew();    // "A New"
+        ab.MethodNew();   // "A New" *주목!
+        b.MethodNew();    // "B New"
+        b2.MethodNew();   // "B New"
+        a2.MethodNew();   // "A New" *주목!
+        
+        a.MethodOverride();    // "A Override"
+        ab.MethodOverride();   // "B Override" *주목!
+        b.MethodOverride();    // "B Override"
+        b2.MethodOverride();   // "B Override"
+        a2.MethodOverride();   // "B Override" *주목!
+    }
+}
+```
   
 ### C# VTable
 
 > https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A9%94%EC%86%8C%EB%93%9C_%ED%85%8C%EC%9D%B4%EB%B8%94  
 > https://www.csharpstudy.com/DevNote/Article/28
 
-* *"virtual class와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"*
+* *"`virtual` 메서드가 있는 부모 클래스와 이를 상속한 클래스가 있고 자식 클래스에서 부모 클래스의 메서드를 `override`했을 때, 이 두 메서드의 주소가 메모리에서 어떤 자료구조로 관리되나요?"*
 
-* Virtual table(VTable)은 가상 메서드(virtual 또는 abstract)를 갖는 클래스를 상속하여 해당 메서드를 override할 때 생긴다.
+* Virtual table(VTable)은 가상 메서드(`virtual` 또는 `abstract`)를 갖는 클래스를 상속하여 해당 메서드를 `override`할 때 생긴다.
   * 메서드 포인터를 저장하는 배열이다.
   * Heap 상 객체의 Type Handle이 가리키는 곳의 Method Table 메타데이터 안에 들어있다.
 * 클래스의 객체가 생성될 때, 컴파일러가 이 VTable에 대한 포인터(vpointer)를 객체의 숨은 멤버로 추가한다.
