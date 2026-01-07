@@ -352,10 +352,11 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 * Unity & C# 스크립팅
   * ["최신 버전의 C#으로 Unity 스크립트를 작성하면 어떤 문제가 생기나요?"](#unity에서-사용하는-c-버전)
   * ["Unity에서 `Update()`와 `FixedUpdate()`와 `LateUpdate()`의 차이에 대해 설명해 보세요."](#unity-lifecycle)
+  * ["값 형식과 참조 형식의 결정적인 차이가 무엇인가요?"](#값-타입과-참조-타입)
   * ["값 형식과 참조 형식이 메모리에 어떻게 저장되는지 설명해 보세요."](#stack--heap-memory)
   * ["C#에서 얕은 복사와 깊은 복사를 할 때 각각 메모리에서 어떤 일이 일어나는지 설명해 보세요."](#c에서의-얕은-복사-vs-깊은-복사)
   * [**"C#과 Unity의 garbage collector가 서로 다른데, 어떤 차이가 있는지 설명해 보세요."**](#c과-unity의-garbage-collector)
-  * ["C#에서 `const`와 `readonly`의 차이를 설명해 보세요."](#c-const와-readonly의-차이)
+  * ["`readonly List<int>`로 선언한 컬렉션의 원소를 편집할 수 있을까요?"](#c-const와-readonly의-차이)
   * ["구조체의 인스턴스 안에 들어있는 참조 타입의 멤버 변수는 스택에 저장되나요, 힙에 저장되나요?"](#c-struct와-class-인스턴스의-차이)
   * ["C#에서 boxing이 일어나는 상황을 설명해 보세요."](#c-boxing--unboxing)
   * ["직렬화된 형식으로서 JSON이 갖는 장점과 단점이 무엇인가요?"](#unity-serialization--deserialization)
@@ -473,6 +474,24 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * LateUpdate는 Update보다 나중에 불린다.
   * 프레임 드랍: 한 프레임의 실행 시간 안에 연산을 다 수행하지 못한 경우 해당 프레임에 렌더링을 하지 못하는 현상이다. 화면 버벅임을 유발한다.
 
+### 값 타입과 참조 타입
+
+> https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+* 값 타입
+  * C#의 primitives(`int`, `float` 등), 구조체(`struct`), 열거(`enum`) 타입이 여기에 속한다.
+  * `System.ValueType`으로부터 상속된다.
+  * 주로 스레드 스택에 할당된다.
+  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/value-types
+* 참조 타입
+  * C#의 클래스(`class`), 문자열(`string`) 타입이 여기에 속한다.
+  * `System.Object` 또는 `System.String`으로부터 상속된다.
+  * 주로 힙에 할당되며 GC(garbage collector)가 관리한다.
+    * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
+  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/reference-types
+* 값 타입 / 참조 타입의 구분은 call by value / call by reference에 의해 구분한다.  
+  메서드 호출 또는 반환 시 값 전체가 복사되면 값 타입이고, 원본 데이터는 그대로 있고 이를 참조하는 주소만 복사하여 넘겨주면 참조 타입이다.
+
 ### Stack / Heap Memory
 
 > 아래 링크에 있는 가상 메모리 그림을 같이 보면서 공부하시면 좋습니다.  
@@ -485,17 +504,38 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 쌓일수록 아래로(낮은 주소 쪽으로) 내려온다.
   * 컴파일러는 호출 스택에 pop하고 push하는 머신 코드를 생성할 뿐이고, 이러한 instruction들이 스택을 관리한다.
   * 실행할 수 없다.
-  * **값 타입을 저장한다.**
+  * **주로 값 타입을 저장한다.**
   * 변수의 사용 범위를 벗어나면 금방 pop되어 수명이 짧은 편이다.
 * **Stack보다 아래에 Heap이 있다.**
   * 쌓일수록 위로(높은 주소 쪽으로) 올라간다.
   * 프로그래머가 관리하며, 실행할 수 없다.
-  * **동적 할당한 객체(참조 타입)를 저장한다.**
+  * **주로 동적 할당한 객체(참조 타입)를 저장한다.**
   * Unity에서의 관리되는 메모리 시스템
     * https://docs.unity3d.com/kr/current/Manual/performance-managed-memory.html
 * 그 아래에 Static data가 있다. 쓸 수 있고 실행할 수 없다.
 * 그 아래에 Literals가 있다. 이는 읽기 전용이며 실행할 수 없다.
 * 그 아래에 Instructions가 있다. 이는 읽기 전용이며 실행할 수 있다.
+
+* <b><i>"C#에서 값 타입의 변수나 필드(int, float, bool, enum, struct 등)는 모두 스택에 저장되나요? 참조 타입의 변수나 필드(class, string 등)는 모두 힙에 저장되나요?"</i></b>
+  * 두 질문의 답 모두 "아니오"이다!
+  * 값 타입이라고 항상 스택에 저장되는 것이 아니고, 참조 타입이라고 항상 힙에 저장되는 것이 아니다.
+    * 값 타입과 참조 타입의 구분은 [관련 내용](#값-타입과-참조-타입)을 참고하자.
+  * 메모리의 저장 위치를 결정하는 데에 있어서 그보다 중요한 것은 변수의 수명이 어느 정도인가이다.
+    * 수명이 짧아서 변수의 scope를 벗어났을 때(예: 메서드 반환 시) 사라져도 되는 변수이면 스택에 저장된다.
+    * Scope를 벗어나도 살아 있어야 하는 변수이면 힙에 저장된다.
+  * 그래서 보통 값 타입의 지역 변수는 스택에 저장된다.
+  * 참조 타입의 지역 변수는, 실제 참조 타입의 데이터가 힙에 저장되고, 지역 변수가 이 힙에 저장된 데이터의 위치(주소) 값을 스택에 들고 있는 형태가 된다.  
+    따라서 scope를 벗어나더라도 [garbage collector](#c과-unity의-garbage-collector)가 돌기 전까지는 실제 데이터가 힙에 계속 남아 있게 된다.
+  * 클래스의 인스턴스의 필드는 해당 필드가 **값 타입**으로 선언되어 있더라도 인스턴스의 원본 데이터가 힙에 저장되므로 함께 **힙에 저장된다.**
+  * [구조체](#c-struct와-class-인스턴스의-차이)의 인스턴스의 필드가 값 타입이라면 이는 보통 스택에 저장된다.
+    * 해당 구조체 인스턴스가 클래스 인스턴스의 필드로 존재하는 상황이 아니라면 말이다.
+  * 문자열은 힙도 스택도 아닌 literals 영역에 실제 데이터(intern)가 할당되고, 이것의 위치(주소)를 변수에 들고 있게 된다.
+    * 문자열이 지역 변수로 선언되었다면 주소 값이 스택에 존재한다.
+    * 문자열이 클래스의 인스턴스의 필드로 선언되었다면 주소 값이 힙에 존재한다.
+  * 배열(array)은 대부분 힙에 저장된다.
+    * 예외가 있는데, `Span<T>`나 `ReadOnlySpan<T>`를 `stackalloc` 키워드와 함께 선언한 경우에는 배열처럼 보이지만 스택에 저장된다.
+    * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/stackalloc
+  * (심화) `ref struct`로 정의한 구조체의 인스턴스는 항상 스택에 저장된다.
 
 ### C#에서의 얕은 복사 vs. 깊은 복사
 
@@ -660,18 +700,24 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 ### C# `const`와 `readonly`의 차이
 
+* *"`readonly List<int>`로 선언한 컬렉션의 원소를 편집할 수 있을까요?"*
+
 * `const`
   * 컴파일 타임에 변수가 값으로 대체된다.
-  * 스택에 저장된다.
+  * 메모리의 static data 영역에 저장된다. (스택에 저장되는 것이 아니다!)
   * 선언할 때에만 값을 설정할 수 있다.
   * 값이 바뀌면 다시 빌드해야 한다.
   * 내장형 타입과만 사용할 수 있다.
 * `readonly`
   * 런타임 상수이다.
-  * 힙에 저장된다.
+  * 필드 선언 또는 구조체 선언 시 붙일 수 있다. 지역 변수 선언에는 붙일 수 없다.
+  * 메모리의 저장 위치는 `readonly`가 없을 때와 동일하다. [관련 내용](#stack--heap-memory)을 참고하자. (항상 힙에 저장되는 것이 아니다!)
   * 선언할 때나 생성자에서만 값을 설정할 수 있다.
   * 코드에 대한 참조를 유지하므로 값이 바뀌더라도 전체를 다시 빌드하지 않아도 된다.
   * 어떤 타입과도 사용할 수 있다. (사용자 정의 클래스 포함)
+  * 값 형식에 `readonly`를 붙이면 초기화 이후에는 그 값을 변경할 수 없다.
+  * 참조 형식(예: 배열이나 `List<T>`)에 `readonly`를 붙이면 초기화 이후에 해당 참조가 다른 데이터를 가리킬 수 없음을 보장하지만, 데이터의 각 원소(또는 필드)까지도 변경되지 않도록 막는 것은 아님에 주의하자!
+    * 그래서 `public readonly List<int> list = new();`를 수행한 후에 `list = new();`를 하는 것은 불가능하지만, `list.Clear();` 또는 `list[0] = 1;` 따위는 문제 없이 작동한다.
 * 일반적으로 `const`보다 `readonly`를 쓰는 것이 좋다.
   * `const`가 조금 빠르기는 하며, 다음의 경우에는 `const`를 사용해도 된다.
     * `switch`/`case`문 레이블
@@ -684,10 +730,12 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
 
 * *"클래스의 인스턴스 안에 들어있는 값 타입의 멤버 변수는 스택에 저장되나요, 힙에 저장되나요?"*
 * *"구조체의 인스턴스 안에 들어있는 참조 타입의 멤버 변수는 스택에 저장되나요, 힙에 저장되나요?"*
+  * 이 질문의 답은 [메모리 저장 위치 관련 내용](#stack--heap-memory)을 읽어보자.
 
 * `struct`(구조체) 인스턴스
   * 값 타입이다.
-  * **스택에 저장된다.**
+  * **주로 스택에 저장된다.**
+    * 예외에 대해서는 [메모리 저장 위치 관련 내용](#stack--heap-memory)을 읽어보자.
   * **필드와 메서드를 가질 수 있다.** *(주의!)*
   * 할당하거나 인수로 넘기거나 반환할 때 복사된다.
 * `class`(클래스) 인스턴스
@@ -695,22 +743,31 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * **힙에 저장된다.**
   * 필드와 메서드를 가질 수 있다.
 
+* *"struct 인스턴스의 필드를 수정하면 해당 인스턴스 전체가 복사되나요?"*
+
+  ```csharp
+  MyStruct a = new MyStruct();
+  a.X = 10;
+  ```
+
+  * 위 코드와 같은 필드 값 변경은 인스턴스 복사를 **일으키지 않고** 원본 데이터에서 해당 값만 변경한다.
+
+* 그러나 struct 인스턴스를 담는 컬렉션(예: `List<MyStruct>`)에서 원소를 인덱서(`[0]`)로 받아 수정하는 경우에는 컴파일 오류가 발생할 것이다.
+  
+  ```csharp
+  MyStructList[0].X = 10; // Error!
+  ```
+
+  * 컬렉션에서 복사본이 반환되기 때문이다.
+  * 이때 해당 원소를 수정해도 원본은 바뀌지 않는다.
+  * 원본이 수정되지 않는 것은 위 코드를 짜면서 의도하지 않은 상황일 것이기 때문에 컴파일러가 이를 미리 막아주는 것이다.
+
 ### C# Boxing & Unboxing
 
-> https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/built-in-types  
 > https://learn.microsoft.com/ko-kr/dotnet/csharp/programming-guide/types/boxing-and-unboxing
 
-* 값 타입
-  * C#의 primitives(`int`, `float` 등), 구조체(`struct`), 열거(`enum`) 타입이 여기에 속한다.
-  * `System.ValueType`으로부터 상속된다.
-  * 스레드 스택에 할당된다.
-  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/builtin-types/value-types
-* 참조 타입
-  * C#의 클래스(`class`), 문자열(`string`) 타입이 여기에 속한다.
-  * `System.Object` 또는 `System.String`으로부터 상속된다.
-  * 힙에 할당되며 GC(garbage collector)가 관리한다.
-    * 이 힙 메모리 주소를 가리키는 주소 값은 스택에 저장된다.
-  * https://learn.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/reference-types
+* 값 타입과 참조 타입에 대한 설명은 [관련 내용](#값-타입과-참조-타입)을 참고하자.
+
 * Boxing: 값 타입을 참조 타입으로 변환
   * Boxing은 동적 할당을 만드므로 비싸다.
 * Unboxing: 참조 타입을 값 타입으로 변환
@@ -725,7 +782,7 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
     ```
 
   * `struct`를 부모 인터페이스 클래스로 캐스팅
-    * `struct`가 값 타입이므로 boxing이 일어난다.
+    * `struct`가 값 타입이고 인터페이스가 참조 타입이므로 boxing이 일어난다.
     * https://medium.com/@swiftroll3d/avoiding-mistakes-when-using-structs-in-c-b1c23043fce0
   
     ```csharp
@@ -822,17 +879,44 @@ Pull Request를 날려주시면 검토 후 반영하겠습니다. 😊
   * 기본적으로 16글자를 담을 수 있는 버퍼를 잡는다.
   * 이 버퍼 안에서는 수정이 이루어져도 GC가 처리하지 않는다.
   * 기존 버퍼가 꽉 찼는데 append하는 경우 뒤에 새 버퍼를 만들고 링크하여 연결한다.
+  * 이 자체가 클래스의 인스턴스이기 때문에 할당이 조금은 발생한다.
 * 문자열 보간
   * 문자열 앞에 `$`를 붙여주면 사용할 수 있다.
   * 예: `text = $"(x, y) = ({pos.x}, {pos.y})"`
+  * 이 문법은 `string.Format()`으로 치환되어 실행된다.
+  * 가독성은 높지만 할당이 발생하며, 특히 [boxing](#c-boxing--unboxing)으로 인해 할당이 추가로 발생할 수 있다.
 
 #### 문자열 할당을 줄이는 방법
 
 * 빈 문자열은 `""` 대신 `string.Empty`를 사용한다.
 * `string.Split()`의 사용을 줄인다.
+  * `ReadOnlySpan<char>`를 사용하면 중간 문자열(동적 할당)을 마구 만들어내지 않고도 문자열을 파싱할 수 있다.
+
+    ```csharp
+    string str = "I like this document!";
+    // return str.Split(' ')[1] == "like";  // So many garbage!
+
+    ReadOnlySpan<char> span = str.AsSpan();
+    int indexOfSpace = -1;
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (span[i] == ' ')
+        {
+            if (indexOfSpace < 0) indexOfSpace = i; // 처음 만나는 ' '의 위치를 기억
+            else return span.Slice(indexOfSpace, i - indexOfSpace - 1).SequenceEqual("like");
+        }
+    }
+    
+    if (indexOfSpace >= 0) return span.Slice(indexOfSpace).SequenceEqual("like"); // ' '이 딱 한 번 등장할 경우
+    return false;
+    ```
+
+* `string.AsSpan().Slice()`를 이용하면 `string.Substring()`보다 할당이 덜 발생한다.
+  * https://learn.microsoft.com/ko-kr/dotnet/api/system.span-1.slice?view=net-8.0
+
 * `+`로 문자열을 연결하지 않고 `StringBuilder` 또는 문자열 보간을 이용한다.
-  * 예: `string s = "a" + "b" + "c" + "d";`의 코드에서는 `"abcd"`를 만들기 위해 `"a"`, `"ab"`, `"abc"`라는 불필요한 중간 결과물들이 할당된다.
-  * `System.Text.StringBuilder`보다 할당을 줄인 서드 파티 라이브러리도 있다. (예: Cysharp의 [`ZString`](https://github.com/Cysharp/ZString))
+  * 예: `string s = "a" + 1 + "b" + 2;`의 코드에서는 `"a1b2"`를 만들기 위해 `string.Concat()`이 호출되면서 `1`과 `2`가 `object` 타입으로 캐스팅되는 [boxing](#c-boxing--unboxing)이 발생한다.
+  * `System.Text.StringBuilder`과 유사하지만 할당을 완전히 제거한 서드 파티 라이브러리도 있다. (예: Cysharp의 [`ZString`](https://github.com/Cysharp/ZString))
 
 #### 빈 문자열 확인
 
